@@ -1,0 +1,75 @@
+
+Running 39 tests using 1 worker
+
+  Ôťô   1 test-audit.spec.ts:12:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 1.1 Page loads successfully (HTTP 200) (1.1s)
+  Ôťô   2 test-audit.spec.ts:17:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 1.2 Full page screenshot - desktop (1920x1080) (5.8s)
+  Ôťô   3 test-audit.spec.ts:24:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 1.3 Full page screenshot - mobile (375x812 iPhone) (3.6s)
+  Ôťô   4 test-audit.spec.ts:31:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 1.4 Full page screenshot - tablet (768x1024 iPad) (4.1s)
+­čôä Page Title: Lumen ÔÇö Limit├ílt Gy┼▒jt┼Ĺi Borkollekci├│ | Sorsz├ímozott Kiad├ísok
+  Ôťô   5 test-audit.spec.ts:39:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 2.1 Page title is correct (1.0s)
+­čôŁ Meta Description: A Lumen egy limit├ílt, sorsz├ímozott gy┼▒jt┼Ĺi borkollekci├│ Magyarorsz├ígr├│l. Minden kiad├ís egyedi, digit├ílisan hiteles├ştett. Maximum 1500 palack kiad├ísonk├ęnt.
+  Ôťô   6 test-audit.spec.ts:46:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 2.2 Meta description exists and is meaningful (1.2s)
+­čîÉ OG Title: Lumen ÔÇö A ritkas├íg val├│di jelent├ęse
+­čîÉ OG Description: Limit├ílt, sorsz├ímozott gy┼▒jt┼Ĺi borkollekci├│ ÔÇö azok sz├ím├íra, akik ├ęrtik a ritkas├íg val├│di jelent├ęs├ęt.
+­čîÉ OG Image: https://www.lumenlimitedseries.com/og-image.jpg
+­čîÉ OG URL: https://www.lumenlimitedseries.com
+­čîÉ OG Type: website
+  Ôťô   7 test-audit.spec.ts:54:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 2.3 Open Graph tags are present (1.1s)
+­čÉŽ Twitter Card: summary_large_image
+­čÉŽ Twitter Title: Lumen ÔÇö Limit├ílt Gy┼▒jt┼Ĺi Borkollekci├│
+­čÉŽ Twitter Desc: Limit├ílt, sorsz├ímozott gy┼▒jt┼Ĺi borkollekci├│ ÔÇö azok sz├ím├íra, akik ├ęrtik a ritkas├íg val├│di jelent├ęs├ęt.
+  Ôťô   8 test-audit.spec.ts:74:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 2.4 Twitter Card tags are present (1.2s)
+­čôŐ JSON-LD entries: [33m2[39m
+  [0] @type: Product | name: Lumen Limited Wine Collection
+  [1] @type: Organization | name: Lumen Collection
+  Ôťô   9 test-audit.spec.ts:88:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 2.5 JSON-LD structured data exists (1.1s)
+­čöŚ Canonical: https://www.lumenlimitedseries.com
+  Ôťô  10 test-audit.spec.ts:107:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 2.6 Canonical URL is set (1.2s)
+­čîŹ Hreflang tags: [
+  { hreflang: [32m'hu-HU'[39m, href: [32m'https://www.lumenlimitedseries.com'[39m },
+  { hreflang: [32m'en-US'[39m, href: [32m'https://www.lumenlimitedseries.com'[39m },
+  { hreflang: [32m'zh-CN'[39m, href: [32m'https://www.lumenlimitedseries.com'[39m },
+  { hreflang: [32m'th-TH'[39m, href: [32m'https://www.lumenlimitedseries.com'[39m }
+]
+  Ôťô  11 test-audit.spec.ts:115:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 2.7 Hreflang tags exist for all 4 languages (1.2s)
+­čĆĚ´ŞĆ HTML lang: hu
+  Ôťô  12 test-audit.spec.ts:130:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 2.8 html lang attribute is set (1.1s)
+­čĄľ Robots: index, follow
+  Ôťô  13 test-audit.spec.ts:137:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 2.9 Robots meta tag allows indexing (1.1s)
+­čôî H1 text: Nem minden
+ker├╝l a vil├íg el├ę.
+  Ôťô  14 test-audit.spec.ts:148:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 3.1 H1 exists and is visible (1.2s)
+­čôî H2 headings: [
+  [32m'Minden kiad├ís\negy ├Ân├íll├│ t├Ârt├ęnet.'[39m,
+  [32m'A Lumen gy├Âkerei\nm├ęlyre ny├║lnak.'[39m,
+  [32m'A Lumen nem csup├ín\negy t├írgy.'[39m,
+  [32m'Nem minden d├Ânt├ęs k├ęrd├ęse.'[39m,
+  [32m'Minden palack egyedi.'[39m,
+  [32m'A Lumen nem k├Âzvetlen ├ęrt├ękes├şt├ęsben jelenik meg.'[39m,
+  [32m'A t├Ârt├ęnet folytat├│dik.'[39m,
+  [32m'Nem minden marad el├ęrhet┼Ĺ.'[39m
+]
+  Ôťô  15 test-audit.spec.ts:157:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 3.2 All H2 headings are present (sections) (1.3s)
+­čľ╝´ŞĆ Images found: [33m8[39m
+  [0] alt: "Lumen kollekci├│" | hasAlt: true | src: image?url=%2F1.jpg&w=3840&q=75
+  [1] alt: "A Lumen t├Ârt├ęnete" | hasAlt: true | src: image?url=%2F2.jpg&w=3840&q=75
+  [2] alt: "Magyar t├íj, sz┼Ĺl┼Ĺbirtok" | hasAlt: true | src: image?url=%2F3.jpg&w=3840&q=75
+  [3] alt: "R├ęszlet 1" | hasAlt: true | src: image?url=%2F4.jpg&w=3840&q=75
+  [4] alt: "R├ęszlet 2" | hasAlt: true | src: image?url=%2F1.jpg&w=3840&q=75
+  [5] alt: "R├ęszlet 3" | hasAlt: true | src: image?url=%2F5.jpg&w=3840&q=75
+  [6] alt: "Hiteles├şt├ęs" | hasAlt: true | src: image?url=%2F6.jpg&w=3840&q=75
+  [7] alt: "A k├Âvetkez┼Ĺ kiad├ís" | hasAlt: true | src: image?url=%2F5.jpg&w=3840&q=75
+  Ôťô  16 test-audit.spec.ts:165:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 3.3 All images have alt attributes (1.2s)
+­čľ╝´ŞĆ Broken images: [
+  [32m'https://www.lumenlimitedseries.com/_next/image?url=%2F4.jpg&w=3840&q=75'[39m,
+  [32m'https://www.lumenlimitedseries.com/_next/image?url=%2F1.jpg&w=3840&q=75'[39m,
+  [32m'https://www.lumenlimitedseries.com/_next/image?url=%2F5.jpg&w=3840&q=75'[39m,
+  [32m'https://www.lumenlimitedseries.com/_next/image?url=%2F6.jpg&w=3840&q=75'[39m,
+  [32m'https://www.lumenlimitedseries.com/_next/image?url=%2F5.jpg&w=3840&q=75'[39m
+]
+  Ôťś  17 test-audit.spec.ts:180:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 3.4 No broken images (all load successfully) (1.3s)
+­čôŹ Scroll before: [33m0[39m Ôćĺ after: [33m6412[39m
+  Ôťô  18 test-audit.spec.ts:190:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 4.1 CTA button "El├ęrhet┼Ĺs├ęg megtekint├ęse" scrolls to #partnerek (3.3s)
+  Ôťś  19 test-audit.spec.ts:211:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 4.2 Language switcher opens on click (1.0m)
+  Ôťś  20 test-audit.spec.ts:230:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 4.3 Language switch to English works (1.0m)
+  Ôťś  21 test-audit.spec.ts:249:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 4.4 Language switch to Chinese works (1.0m)

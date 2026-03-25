@@ -49,6 +49,7 @@ export interface SiteTranslations {
   exclusivity: {
     label: string;
     number: string;
+    unit: string;
     heading: string;
     p1: string;
     p2: string;
@@ -59,6 +60,7 @@ export interface SiteTranslations {
     p1: string;
     p2: string;
     p3: string;
+    cta: string;
   };
   partners: {
     heading: string;
@@ -107,7 +109,7 @@ export const translations: Record<Locale, SiteTranslations> = {
       line3: "Nem mindenhol jelenik meg.\nÉs nem marad sokáig.",
     },
     concept: {
-      heading: "Minden kiadás\negy önálló történet.",
+      heading: "Minden Lumen kiadás\negy önálló történet.",
       p1: "Egy adott időszak lenyomata, egy gondosan kiválasztott bor, és egy kollekció, amelyből csak korlátozott számú darab létezik.",
       p2: "Minden palack sorszámozott. Minden darab egy helyhez és egy időhöz kötődik.",
       p3: "Amikor egy kiadás elfogy, nem tér vissza ugyanabban a formában.",
@@ -129,6 +131,7 @@ export const translations: Record<Locale, SiteTranslations> = {
     exclusivity: {
       label: "Korlátozott elérés",
       number: "1500",
+      unit: "PALACK",
       heading: "Nem minden döntés kérdése.",
       p1: "Van, amikor az számít, hogy valaki éppen ott van. Abban a városban. Abban az időben.",
       p2: "Minden kiadás egy szűk kör számára válik elérhetővé. Legfeljebb 1500 palack. Nem ismételhető. Nem pótolható.",
@@ -138,8 +141,7 @@ export const translations: Record<Locale, SiteTranslations> = {
       heading: "Minden palack egyedi.",
       p1: "Sorszámozott és digitálisan hitelesített.",
       p2: "A QR-kódon keresztül visszakövethető a kollekció eredete, története és helye.",
-      p3: "Egyfajta biztos pont — egy világban, ahol a valódi érték ritkán egyértelmű.",
-    },
+      p3: "Egyfajta biztos pont — egy világban, ahol a valódi érték ritkán egyértelmű.",      cta: "Helyi elérhetőség megtekintése",    },
     partners: {
       heading: "A Lumen nem közvetlen értékesítésben jelenik meg.",
       p1: "Minden régióban gondosan kiválasztott partnereken keresztül válik elérhetővé.",
@@ -186,7 +188,7 @@ export const translations: Record<Locale, SiteTranslations> = {
       line3: "It does not appear everywhere.\nAnd it does not remain for long.",
     },
     concept: {
-      heading: "Every release\nis a story of its own.",
+      heading: "Every Lumen release\nis a story of its own.",
       p1: "A reflection of a moment in time, a carefully selected wine, and a collection produced in strictly limited quantities.",
       p2: "Every bottle is individually numbered. Each piece is tied to a place and a moment.",
       p3: "Once a release is gone, it does not return in the same form.",
@@ -208,6 +210,7 @@ export const translations: Record<Locale, SiteTranslations> = {
     exclusivity: {
       label: "Limited access",
       number: "1500",
+      unit: "BOTTLES",
       heading: "Not every decision is about choice.",
       p1: "Sometimes what matters is being there. In that city. At that time.",
       p2: "Each release becomes available to a select few. A maximum of 1500 bottles. Unrepeatable. Irreplaceable.",
@@ -219,6 +222,7 @@ export const translations: Record<Locale, SiteTranslations> = {
       p1: "Individually numbered and digitally authenticated.",
       p2: "Through the QR code, the origin, story, and provenance of each piece can be traced.",
       p3: "A point of certainty — in a world where true value is rarely obvious.",
+      cta: "View local availability",
     },
     partners: {
       heading: "Lumen is not sold directly.",
@@ -287,6 +291,7 @@ export const translations: Record<Locale, SiteTranslations> = {
     exclusivity: {
       label: "限量发售",
       number: "1500",
+      unit: "瓶",
       heading: "并非所有决定都关乎选择。",
       p1: "有时重要的是，恰好在那个城市、那个时刻。",
       p2: "每一期仅向少数人开放。最多1500瓶。不可复制。不可替代。",
@@ -297,6 +302,7 @@ export const translations: Record<Locale, SiteTranslations> = {
       p1: "独立编号，数字认证。",
       p2: "通过二维码，可追溯收藏的起源、故事与产地。",
       p3: "在一个价值模糊的世界中，它是一种确定性的存在。",
+      cta: "查看本地渠道",
     },
     partners: {
       heading: "Lumen 不直接销售。",
@@ -366,6 +372,7 @@ export const translations: Record<Locale, SiteTranslations> = {
     exclusivity: {
       label: "จำนวนจำกัด",
       number: "1500",
+      unit: "ขวด",
       heading: "ไม่ใช่ทุกการตัดสินใจเป็นเรื่องของทางเลือก",
       p1: "บางครั้งสิ่งสำคัญคือการอยู่ที่นั่น ในเมืองนั้น ในเวลานั้น",
       p2: "แต่ละรุ่นเปิดให้เฉพาะกลุ่มคนจำนวนน้อย สูงสุด 1500 ขวด ไม่ผลิตซ้ำ ไม่ทดแทนได้",
@@ -377,6 +384,7 @@ export const translations: Record<Locale, SiteTranslations> = {
       p1: "มีหมายเลขเฉพาะและผ่านการรับรองดิจิทัล",
       p2: "ผ่าน QR Code สามารถติดตามต้นกำเนิด เรื่องราว และที่มาได้",
       p3: "จุดยืนแห่งความแน่นอน — ในโลกที่คุณค่าแท้จริงแทบไม่ชัดเจน",
+      cta: "ดูช่องทางในพื้นที่",
     },
     partners: {
       heading: "Lumen ไม่ได้จำหน่ายโดยตรง",
