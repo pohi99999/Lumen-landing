@@ -12,13 +12,81 @@
   --color-lumen-bordeaux: #3A0F14;
   --color-lumen-gold: #C6A15B;
   --color-lumen-white: #EAEAEA;
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-cormorant), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-display: var(--font-playfair), ui-serif, Georgia, serif;
 }
 
+/* Global background: luxurious red silk texture */
 body {
   background-color: var(--background);
   color: var(--foreground);
+  background-image: url('/hatter.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Background overlay for text readability */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(11, 11, 11, 0.82) 0%,
+    rgba(58, 15, 20, 0.65) 30%,
+    rgba(11, 11, 11, 0.78) 60%,
+    rgba(11, 11, 11, 0.88) 100%
+  );
+  z-index: 0;
+  pointer-events: none;
+}
+
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Typography refinements */
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+
+p {
+  line-height: 1.75;
+}
+
+/* Premium gold text glow for headings */
+.text-glow-gold {
+  text-shadow: 0 0 40px rgba(198, 161, 91, 0.15);
+}
+
+/* Gradient gold text */
+.text-gradient-gold {
+  background: linear-gradient(135deg, #C6A15B 0%, #E5D5A0 50%, #C6A15B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Smooth section dividers */
+.section-divider {
+  width: 80px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #C6A15B, transparent);
+}
+
+/* Silk subtle animation for background */
+@keyframes silk-shift {
+  0%, 100% { background-position: center center; }
+  50% { background-position: center 48%; }
+}
+
+body {
+  animation: silk-shift 30s ease-in-out infinite;
 }
 
 /* Custom scrollbar for a premium feel */
@@ -34,4 +102,58 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #C6A15B;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection colors */
+::selection {
+  background-color: #3A0F14;
+  color: #C6A15B;
+}
+
+/* Focus ring for accessibility */
+:focus-visible {
+  outline: 2px solid #C6A15B;
+  outline-offset: 2px;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  body {
+    animation: none;
+  }
+}
+
+/* CJK (Chinese) and Thai font stack improvements */
+:lang(zh) {
+  font-family: var(--font-montserrat), "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+}
+:lang(th) {
+  font-family: var(--font-montserrat), "Noto Sans Thai", "Sarabun", sans-serif;
+}
+
+/* Animate-in utility for dropdown */
+@keyframes fadeInSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-in {
+  animation: fadeInSlideDown 0.2s ease-out forwards;
 }
