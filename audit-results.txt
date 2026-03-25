@@ -1,0 +1,421 @@
+
+Running 39 tests using 1 worker
+
+  Ôťô   1 test-audit.spec.ts:12:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 1.1 Page loads successfully (HTTP 200) (1.9s)
+  Ôťô   2 test-audit.spec.ts:17:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 1.2 Full page screenshot - desktop (1920x1080) (5.2s)
+  Ôťô   3 test-audit.spec.ts:24:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 1.3 Full page screenshot - mobile (375x812 iPhone) (3.4s)
+  Ôťô   4 test-audit.spec.ts:31:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 1.4 Full page screenshot - tablet (768x1024 iPad) (4.0s)
+­čôä Page Title: Lumen ÔÇö Limit├ílt Gy┼▒jt┼Ĺi Borkollekci├│ | Sorsz├ímozott Kiad├ísok
+  Ôťô   5 test-audit.spec.ts:39:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 2.1 Page title is correct (1.1s)
+­čôŁ Meta Description: A Lumen egy limit├ílt, sorsz├ímozott gy┼▒jt┼Ĺi borkollekci├│ Magyarorsz├ígr├│l. Minden kiad├ís egyedi, digit├ílisan hiteles├ştett. Maximum 1500 palack kiad├ísonk├ęnt.
+  Ôťô   6 test-audit.spec.ts:46:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 2.2 Meta description exists and is meaningful (1.1s)
+­čîÉ OG Title: Lumen ÔÇö A ritkas├íg val├│di jelent├ęse
+­čîÉ OG Description: Limit├ílt, sorsz├ímozott gy┼▒jt┼Ĺi borkollekci├│ ÔÇö azok sz├ím├íra, akik ├ęrtik a ritkas├íg val├│di jelent├ęs├ęt.
+­čîÉ OG Image: https://www.lumenlimitedseries.com/og-image.jpg
+­čîÉ OG URL: https://www.lumenlimitedseries.com
+­čîÉ OG Type: website
+  Ôťô   7 test-audit.spec.ts:54:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 2.3 Open Graph tags are present (1.1s)
+­čÉŽ Twitter Card: summary_large_image
+­čÉŽ Twitter Title: Lumen ÔÇö Limit├ílt Gy┼▒jt┼Ĺi Borkollekci├│
+­čÉŽ Twitter Desc: Limit├ílt, sorsz├ímozott gy┼▒jt┼Ĺi borkollekci├│ ÔÇö azok sz├ím├íra, akik ├ęrtik a ritkas├íg val├│di jelent├ęs├ęt.
+  Ôťô   8 test-audit.spec.ts:74:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 2.4 Twitter Card tags are present (1.1s)
+­čôŐ JSON-LD entries: [33m2[39m
+  [0] @type: Product | name: Lumen Limited Wine Collection
+  [1] @type: Organization | name: Lumen Collection
+  Ôťô   9 test-audit.spec.ts:88:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 2.5 JSON-LD structured data exists (1.0s)
+­čöŚ Canonical: https://www.lumenlimitedseries.com
+  Ôťô  10 test-audit.spec.ts:107:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 2.6 Canonical URL is set (1.0s)
+­čîŹ Hreflang tags: [
+  { hreflang: [32m'hu-HU'[39m, href: [32m'https://www.lumenlimitedseries.com'[39m },
+  { hreflang: [32m'en-US'[39m, href: [32m'https://www.lumenlimitedseries.com'[39m },
+  { hreflang: [32m'zh-CN'[39m, href: [32m'https://www.lumenlimitedseries.com'[39m },
+  { hreflang: [32m'th-TH'[39m, href: [32m'https://www.lumenlimitedseries.com'[39m }
+]
+  Ôťô  11 test-audit.spec.ts:115:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 2.7 Hreflang tags exist for all 4 languages (1.0s)
+­čĆĚ´ŞĆ HTML lang: hu
+  Ôťô  12 test-audit.spec.ts:130:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 2.8 html lang attribute is set (1.2s)
+­čĄľ Robots: index, follow
+  Ôťô  13 test-audit.spec.ts:137:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 2.9 Robots meta tag allows indexing (1.0s)
+­čôî H1 text: Nem minden
+ker├╝l a vil├íg el├ę.
+  Ôťô  14 test-audit.spec.ts:148:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 3.1 H1 exists and is visible (1.0s)
+­čôî H2 headings: [
+  [32m'Minden Lumen kiad├ís\negy ├Ân├íll├│ t├Ârt├ęnet.'[39m,
+  [32m'A Lumen gy├Âkerei\nm├ęlyre ny├║lnak.'[39m,
+  [32m'A Lumen nem csup├ín\negy t├írgy.'[39m,
+  [32m'Nem minden d├Ânt├ęs k├ęrd├ęse.'[39m,
+  [32m'Minden palack egyedi.'[39m,
+  [32m'A Lumen nem k├Âzvetlen ├ęrt├ękes├şt├ęsben jelenik meg.'[39m,
+  [32m'A t├Ârt├ęnet folytat├│dik.'[39m,
+  [32m'Nem minden marad el├ęrhet┼Ĺ.'[39m
+]
+  Ôťô  15 test-audit.spec.ts:157:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 3.2 All H2 headings are present (sections) (1.1s)
+­čľ╝´ŞĆ Images found: [33m8[39m
+  [0] alt: "Lumen kollekci├│" | hasAlt: true | src: image?url=%2F1.jpg&w=3840&q=75
+  [1] alt: "A Lumen t├Ârt├ęnete" | hasAlt: true | src: image?url=%2F2.jpg&w=3840&q=75
+  [2] alt: "Magyar t├íj, sz┼Ĺl┼Ĺbirtok" | hasAlt: true | src: image?url=%2F3.jpg&w=3840&q=75
+  [3] alt: "R├ęszlet 1" | hasAlt: true | src: image?url=%2F4.jpg&w=3840&q=75
+  [4] alt: "R├ęszlet 2" | hasAlt: true | src: image?url=%2F1.jpg&w=3840&q=75
+  [5] alt: "R├ęszlet 3" | hasAlt: true | src: image?url=%2F5.jpg&w=3840&q=75
+  [6] alt: "Hiteles├şt├ęs" | hasAlt: true | src: image?url=%2F6.jpg&w=3840&q=75
+  [7] alt: "A k├Âvetkez┼Ĺ kiad├ís" | hasAlt: true | src: image?url=%2F5.jpg&w=3840&q=75
+  Ôťô  16 test-audit.spec.ts:165:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 3.3 All images have alt attributes (997ms)
+­čľ╝´ŞĆ Broken images: [
+  [32m'https://www.lumenlimitedseries.com/_next/image?url=%2F4.jpg&w=3840&q=75'[39m,
+  [32m'https://www.lumenlimitedseries.com/_next/image?url=%2F1.jpg&w=3840&q=75'[39m,
+  [32m'https://www.lumenlimitedseries.com/_next/image?url=%2F5.jpg&w=3840&q=75'[39m,
+  [32m'https://www.lumenlimitedseries.com/_next/image?url=%2F6.jpg&w=3840&q=75'[39m,
+  [32m'https://www.lumenlimitedseries.com/_next/image?url=%2F5.jpg&w=3840&q=75'[39m
+]
+  Ôťś  17 test-audit.spec.ts:180:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 3.4 No broken images (all load successfully) (1.1s)
+­čôŹ Scroll before: [33m0[39m Ôćĺ after: [33m6472[39m
+  Ôťô  18 test-audit.spec.ts:190:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 4.1 CTA button "El├ęrhet┼Ĺs├ęg megtekint├ęse" scrolls to #partnerek (4.2s)
+  Ôťś  19 test-audit.spec.ts:211:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 4.2 Language switcher opens on click (1.0m)
+  Ôťś  20 test-audit.spec.ts:230:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 4.3 Language switch to English works (1.0m)
+  Ôťś  21 test-audit.spec.ts:249:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 4.4 Language switch to Chinese works (1.0m)
+  Ôťś  22 test-audit.spec.ts:264:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 4.5 Language switch to Thai works (1.0m)
+  Ôťś  23 test-audit.spec.ts:279:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 4.6 Language switch back to Hungarian works (1.0m)
+­čöŚ Footer links count: [33m3[39m
+  [0] "Impresszum" Ôćĺ #
+  [1] "Adatkezel├ęs" Ôćĺ #
+  [2] "Kapcsolat" Ôćĺ #
+  Ôťô  24 test-audit.spec.ts:299:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 4.7 Footer links are clickable (2.3s)
+­čĄŁ Partner CTA text: Helyi el├ęrhet┼Ĺs├ęg megtekint├ęse
+  Ôťô  25 test-audit.spec.ts:319:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 4.8 Partner section CTA button is clickable (2.6s)
+ÔĆ▒´ŞĆ Page load time: [33m865[39m ms
+  Ôťô  26 test-audit.spec.ts:333:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 5.1 Page load time under 5 seconds (953ms)
+ÔŁî Console errors: None
+  Ôťô  27 test-audit.spec.ts:341:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 5.2 No console errors (4.0s)
+­čÜź 404 resources: None
+  Ôťô  28 test-audit.spec.ts:359:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 5.3 No 404 resources (954ms)
+­čöĄ Loaded fonts: [
+  [32m'Montserrat'[39m,
+  [32m'Montserrat Fallback'[39m,
+  [32m'Playfair Display'[39m,
+  [32m'Playfair Display Fallback'[39m
+]
+  Ôťô  29 test-audit.spec.ts:373:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 5.4 Fonts load correctly (Montserrat + Playfair Display) (994ms)
+­čÄĘ Body background-image: url("https://www.lumenlimitedseries.com/hatter.jpg")
+  Ôťô  30 test-audit.spec.ts:398:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 5.5 Background image loads (937ms)
+­čôÉ Heading hierarchy:
+  H1: Nem minden
+ker├╝l a vil├íg el├ę.
+  H2: Minden Lumen kiad├ís
+egy ├Ân├íll├│ t├Ârt├ęnet.
+  H2: A Lumen gy├Âkerei
+m├ęlyre ny├║lnak.
+  H2: A Lumen nem csup├ín
+egy t├írgy.
+  H2: Nem minden d├Ânt├ęs k├ęrd├ęse.
+  H2: Minden palack egyedi.
+  H2: A Lumen nem k├Âzvetlen ├ęrt├ękes├şt├ęsben jelenik meg.
+  H2: A t├Ârt├ęnet folytat├│dik.
+  H2: Nem minden marad el├ęrhet┼Ĺ.
+  Ôťô  31 test-audit.spec.ts:407:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 6.1 Page has proper heading hierarchy (h1 Ôćĺ h2) (992ms)
+­čÄ» Focused element: A
+  Ôťô  32 test-audit.spec.ts:422:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 6.2 Focus visible works (keyboard navigation) (2.0s)
+­čÄĘ Gold text color: rgb(198, 161, 91)
+­čÄĘ Body bg color: rgb(11, 11, 11)
+  Ôťô  33 test-audit.spec.ts:438:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 6.3 Color contrast - gold text on dark bg (1.1s)
+­čô▒ Lang button position: { x: [33m-24[39m, y: [33m24[39m, width: [33m124.171875[39m, height: [33m38[39m }
+  Ôťś  34 test-audit.spec.ts:454:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 7.1 Mobile: language switcher is visible and usable (1.1s)
+­čô▒ H1 font-size on mobile: 48px
+  Ôťô  35 test-audit.spec.ts:471:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 7.2 Mobile: hero section text is readable (1.1s)
+­čô▒ Horizontal overflow: [33mtrue[39m
+  Ôťś  36 test-audit.spec.ts:486:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 7.3 Mobile: no horizontal overflow (990ms)
+­čľ╝´ŞĆ Image optimization:
+  [0] srcset:YES sizes:100vw loading:auto next:true src:...com/_next/image?url=%2F1.jpg&w=3840&q=75
+  [1] srcset:YES sizes:(max-width: 1024px) 100vw, 50vw loading:lazy next:true src:...com/_next/image?url=%2F2.jpg&w=3840&q=75
+  [2] srcset:YES sizes:(max-width: 1024px) 100vw, 50vw loading:lazy next:true src:...com/_next/image?url=%2F3.jpg&w=3840&q=75
+  [3] srcset:YES sizes:(max-width: 768px) 100vw, 33vw loading:lazy next:true src:...com/_next/image?url=%2F4.jpg&w=3840&q=75
+  [4] srcset:YES sizes:(max-width: 768px) 100vw, 33vw loading:lazy next:true src:...com/_next/image?url=%2F1.jpg&w=3840&q=75
+  [5] srcset:YES sizes:(max-width: 768px) 100vw, 33vw loading:lazy next:true src:...com/_next/image?url=%2F5.jpg&w=3840&q=75
+  [6] srcset:YES sizes:(max-width: 1024px) 100vw, 400px loading:lazy next:true src:...com/_next/image?url=%2F6.jpg&w=3840&q=75
+  [7] srcset:YES sizes:(max-width: 1024px) 100vw, 50vw loading:lazy next:true src:...com/_next/image?url=%2F5.jpg&w=3840&q=75
+  Ôťô  37 test-audit.spec.ts:498:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 7.4 Images are responsive (use next/image) (1.1s)
+  Ôťô  38 test-audit.spec.ts:518:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 8.1 Scroll animations trigger on scroll (10.9s)
+  Ôťô  39 test-audit.spec.ts:532:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 9.1 Click every section in sequence (full page walk) (18.0s)
+
+
+  1) test-audit.spec.ts:180:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 3.4 No broken images (all load successfully) 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m5[39m
+
+      184 |     );
+      185 |     console.log('­čľ╝´ŞĆ Broken images:', brokenImages);
+    > 186 |     expect(brokenImages.length).toBe(0);
+          |                                 ^
+      187 |   });
+      188 |
+      189 |   // ============ 4. CLICKABLE ELEMENTS & INTERACTIONS ============
+        at F:\mcp-brunella-core\temp\Lumen-landing\test-audit.spec.ts:186:33
+
+    Error Context: test-results\test-audit-­čöŹ-Lumen-Landin-faf97-ages-all-load-successfully-\error-context.md
+
+  2) test-audit.spec.ts:211:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 4.2 Language switcher opens on click 
+
+    [31mTest timeout of 60000ms exceeded.[39m
+
+    Error: locator.click: Test timeout of 60000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('button[aria-label="Change language"]')[22m
+    [2m    - locator resolved to <button aria-label="Change language" class="flex items-center gap-2 px-4 py-2.5 bg-black/60 backdrop-blur-md border border-[#C6A15B]/30 rounded-full text-sm text-[#EAEAEA] hover:border-[#C6A15B]/70 hover:bg-black/80 transition-all duration-300 shadow-lg shadow-black/20">ÔÇŽ</button>[22m
+    [2m  - attempting click action[22m
+    [2m    2 ├Ś waiting for element to be visible, enabled and stable[22m
+    [2m      - element is visible, enabled and stable[22m
+    [2m      - scrolling into view if needed[22m
+    [2m      - done scrolling[22m
+    [2m      - <div class="container relative z-10 mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center h-full pt-20">ÔÇŽ</div> from <main class="min-h-screen text-[#EAEAEA] selection:bg-[#3A0F14] selection:text-white pb-20">ÔÇŽ</main> subtree intercepts pointer events[22m
+    [2m    - retrying click action[22m
+    [2m    - waiting 20ms[22m
+    [2m    2 ├Ś waiting for element to be visible, enabled and stable[22m
+    [2m      - element is visible, enabled and stable[22m
+    [2m      - scrolling into view if needed[22m
+    [2m      - done scrolling[22m
+    [2m      - <div class="container relative z-10 mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center h-full pt-20">ÔÇŽ</div> from <main class="min-h-screen text-[#EAEAEA] selection:bg-[#3A0F14] selection:text-white pb-20">ÔÇŽ</main> subtree intercepts pointer events[22m
+    [2m    - retrying click action[22m
+    [2m      - waiting 100ms[22m
+    [2m    107 ├Ś waiting for element to be visible, enabled and stable[22m
+    [2m        - element is visible, enabled and stable[22m
+    [2m        - scrolling into view if needed[22m
+    [2m        - done scrolling[22m
+    [2m        - <div class="container relative z-10 mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center h-full pt-20">ÔÇŽ</div> from <main class="min-h-screen text-[#EAEAEA] selection:bg-[#3A0F14] selection:text-white pb-20">ÔÇŽ</main> subtree intercepts pointer events[22m
+    [2m      - retrying click action[22m
+    [2m        - waiting 500ms[22m
+
+
+      217 |     
+      218 |     // Click to open dropdown
+    > 219 |     await langButton.click();
+          |                      ^
+      220 |     await page.waitForTimeout(500);
+      221 |     
+      222 |     // Screenshot the open dropdown
+        at F:\mcp-brunella-core\temp\Lumen-landing\test-audit.spec.ts:219:22
+
+    Error Context: test-results\test-audit-­čöŹ-Lumen-Landin-ef657-age-switcher-opens-on-click\error-context.md
+
+  3) test-audit.spec.ts:230:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 4.3 Language switch to English works 
+
+    [31mTest timeout of 60000ms exceeded.[39m
+
+    Error: locator.click: Test timeout of 60000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('button[aria-label="Change language"]')[22m
+    [2m    - locator resolved to <button aria-label="Change language" class="flex items-center gap-2 px-4 py-2.5 bg-black/60 backdrop-blur-md border border-[#C6A15B]/30 rounded-full text-sm text-[#EAEAEA] hover:border-[#C6A15B]/70 hover:bg-black/80 transition-all duration-300 shadow-lg shadow-black/20">ÔÇŽ</button>[22m
+    [2m  - attempting click action[22m
+    [2m    2 ├Ś waiting for element to be visible, enabled and stable[22m
+    [2m      - element is visible, enabled and stable[22m
+    [2m      - scrolling into view if needed[22m
+    [2m      - done scrolling[22m
+    [2m      - <div class="container relative z-10 mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center h-full pt-20">ÔÇŽ</div> from <main class="min-h-screen text-[#EAEAEA] selection:bg-[#3A0F14] selection:text-white pb-20">ÔÇŽ</main> subtree intercepts pointer events[22m
+    [2m    - retrying click action[22m
+    [2m    - waiting 20ms[22m
+    [2m    2 ├Ś waiting for element to be visible, enabled and stable[22m
+    [2m      - element is visible, enabled and stable[22m
+    [2m      - scrolling into view if needed[22m
+    [2m      - done scrolling[22m
+    [2m      - <div class="container relative z-10 mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center h-full pt-20">ÔÇŽ</div> from <main class="min-h-screen text-[#EAEAEA] selection:bg-[#3A0F14] selection:text-white pb-20">ÔÇŽ</main> subtree intercepts pointer events[22m
+    [2m    - retrying click action[22m
+    [2m      - waiting 100ms[22m
+    [2m    106 ├Ś waiting for element to be visible, enabled and stable[22m
+    [2m        - element is visible, enabled and stable[22m
+    [2m        - scrolling into view if needed[22m
+    [2m        - done scrolling[22m
+    [2m        - <div class="container relative z-10 mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center h-full pt-20">ÔÇŽ</div> from <main class="min-h-screen text-[#EAEAEA] selection:bg-[#3A0F14] selection:text-white pb-20">ÔÇŽ</main> subtree intercepts pointer events[22m
+    [2m      - retrying click action[22m
+    [2m        - waiting 500ms[22m
+
+
+      232 |     
+      233 |     // Open language switcher
+    > 234 |     await page.locator('button[aria-label="Change language"]').click();
+          |                                                                ^
+      235 |     await page.waitForTimeout(500);
+      236 |     
+      237 |     // Click English
+        at F:\mcp-brunella-core\temp\Lumen-landing\test-audit.spec.ts:234:64
+
+    Error Context: test-results\test-audit-­čöŹ-Lumen-Landin-e93f7-age-switch-to-English-works\error-context.md
+
+  4) test-audit.spec.ts:249:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 4.4 Language switch to Chinese works 
+
+    [31mTest timeout of 60000ms exceeded.[39m
+
+    Error: locator.click: Test timeout of 60000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('button[aria-label="Change language"]')[22m
+    [2m    - locator resolved to <button aria-label="Change language" class="flex items-center gap-2 px-4 py-2.5 bg-black/60 backdrop-blur-md border border-[#C6A15B]/30 rounded-full text-sm text-[#EAEAEA] hover:border-[#C6A15B]/70 hover:bg-black/80 transition-all duration-300 shadow-lg shadow-black/20">ÔÇŽ</button>[22m
+    [2m  - attempting click action[22m
+    [2m    2 ├Ś waiting for element to be visible, enabled and stable[22m
+    [2m      - element is visible, enabled and stable[22m
+    [2m      - scrolling into view if needed[22m
+    [2m      - done scrolling[22m
+    [2m      - <div class="container relative z-10 mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center h-full pt-20">ÔÇŽ</div> from <main class="min-h-screen text-[#EAEAEA] selection:bg-[#3A0F14] selection:text-white pb-20">ÔÇŽ</main> subtree intercepts pointer events[22m
+    [2m    - retrying click action[22m
+    [2m    - waiting 20ms[22m
+    [2m    2 ├Ś waiting for element to be visible, enabled and stable[22m
+    [2m      - element is visible, enabled and stable[22m
+    [2m      - scrolling into view if needed[22m
+    [2m      - done scrolling[22m
+    [2m      - <div class="container relative z-10 mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center h-full pt-20">ÔÇŽ</div> from <main class="min-h-screen text-[#EAEAEA] selection:bg-[#3A0F14] selection:text-white pb-20">ÔÇŽ</main> subtree intercepts pointer events[22m
+    [2m    - retrying click action[22m
+    [2m      - waiting 100ms[22m
+    [2m    107 ├Ś waiting for element to be visible, enabled and stable[22m
+    [2m        - element is visible, enabled and stable[22m
+    [2m        - scrolling into view if needed[22m
+    [2m        - done scrolling[22m
+    [2m        - <div class="container relative z-10 mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center h-full pt-20">ÔÇŽ</div> from <main class="min-h-screen text-[#EAEAEA] selection:bg-[#3A0F14] selection:text-white pb-20">ÔÇŽ</main> subtree intercepts pointer events[22m
+    [2m      - retrying click action[22m
+    [2m        - waiting 500ms[22m
+
+
+      250 |     await page.goto(BASE_URL, { waitUntil: 'networkidle' });
+      251 |     
+    > 252 |     await page.locator('button[aria-label="Change language"]').click();
+          |                                                                ^
+      253 |     await page.waitForTimeout(500);
+      254 |     await page.locator('button:has-text("ńŞşŠľç")').click();
+      255 |     await page.waitForTimeout(1000);
+        at F:\mcp-brunella-core\temp\Lumen-landing\test-audit.spec.ts:252:64
+
+    Error Context: test-results\test-audit-­čöŹ-Lumen-Landin-e9a74-age-switch-to-Chinese-works\error-context.md
+
+  5) test-audit.spec.ts:264:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 4.5 Language switch to Thai works 
+
+    [31mTest timeout of 60000ms exceeded.[39m
+
+    Error: locator.click: Test timeout of 60000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('button[aria-label="Change language"]')[22m
+    [2m    - locator resolved to <button aria-label="Change language" class="flex items-center gap-2 px-4 py-2.5 bg-black/60 backdrop-blur-md border border-[#C6A15B]/30 rounded-full text-sm text-[#EAEAEA] hover:border-[#C6A15B]/70 hover:bg-black/80 transition-all duration-300 shadow-lg shadow-black/20">ÔÇŽ</button>[22m
+    [2m  - attempting click action[22m
+    [2m    2 ├Ś waiting for element to be visible, enabled and stable[22m
+    [2m      - element is visible, enabled and stable[22m
+    [2m      - scrolling into view if needed[22m
+    [2m      - done scrolling[22m
+    [2m      - <div class="container relative z-10 mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center h-full pt-20">ÔÇŽ</div> from <main class="min-h-screen text-[#EAEAEA] selection:bg-[#3A0F14] selection:text-white pb-20">ÔÇŽ</main> subtree intercepts pointer events[22m
+    [2m    - retrying click action[22m
+    [2m    - waiting 20ms[22m
+    [2m    2 ├Ś waiting for element to be visible, enabled and stable[22m
+    [2m      - element is visible, enabled and stable[22m
+    [2m      - scrolling into view if needed[22m
+    [2m      - done scrolling[22m
+    [2m      - <div class="container relative z-10 mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center h-full pt-20">ÔÇŽ</div> from <main class="min-h-screen text-[#EAEAEA] selection:bg-[#3A0F14] selection:text-white pb-20">ÔÇŽ</main> subtree intercepts pointer events[22m
+    [2m    - retrying click action[22m
+    [2m      - waiting 100ms[22m
+    [2m    107 ├Ś waiting for element to be visible, enabled and stable[22m
+    [2m        - element is visible, enabled and stable[22m
+    [2m        - scrolling into view if needed[22m
+    [2m        - done scrolling[22m
+    [2m        - <div class="container relative z-10 mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center h-full pt-20">ÔÇŽ</div> from <main class="min-h-screen text-[#EAEAEA] selection:bg-[#3A0F14] selection:text-white pb-20">ÔÇŽ</main> subtree intercepts pointer events[22m
+    [2m      - retrying click action[22m
+    [2m        - waiting 500ms[22m
+
+
+      265 |     await page.goto(BASE_URL, { waitUntil: 'networkidle' });
+      266 |     
+    > 267 |     await page.locator('button[aria-label="Change language"]').click();
+          |                                                                ^
+      268 |     await page.waitForTimeout(500);
+      269 |     await page.locator('button:has-text("Ó╣äÓŞŚÓŞó")').click();
+      270 |     await page.waitForTimeout(1000);
+        at F:\mcp-brunella-core\temp\Lumen-landing\test-audit.spec.ts:267:64
+
+    Error Context: test-results\test-audit-­čöŹ-Lumen-Landin-0b55a-nguage-switch-to-Thai-works\error-context.md
+
+  6) test-audit.spec.ts:279:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 4.6 Language switch back to Hungarian works 
+
+    [31mTest timeout of 60000ms exceeded.[39m
+
+    Error: locator.click: Test timeout of 60000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('button[aria-label="Change language"]')[22m
+    [2m    - locator resolved to <button aria-label="Change language" class="flex items-center gap-2 px-4 py-2.5 bg-black/60 backdrop-blur-md border border-[#C6A15B]/30 rounded-full text-sm text-[#EAEAEA] hover:border-[#C6A15B]/70 hover:bg-black/80 transition-all duration-300 shadow-lg shadow-black/20">ÔÇŽ</button>[22m
+    [2m  - attempting click action[22m
+    [2m    2 ├Ś waiting for element to be visible, enabled and stable[22m
+    [2m      - element is visible, enabled and stable[22m
+    [2m      - scrolling into view if needed[22m
+    [2m      - done scrolling[22m
+    [2m      - <div class="container relative z-10 mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center h-full pt-20">ÔÇŽ</div> from <main class="min-h-screen text-[#EAEAEA] selection:bg-[#3A0F14] selection:text-white pb-20">ÔÇŽ</main> subtree intercepts pointer events[22m
+    [2m    - retrying click action[22m
+    [2m    - waiting 20ms[22m
+    [2m    2 ├Ś waiting for element to be visible, enabled and stable[22m
+    [2m      - element is visible, enabled and stable[22m
+    [2m      - scrolling into view if needed[22m
+    [2m      - done scrolling[22m
+    [2m      - <div class="container relative z-10 mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center h-full pt-20">ÔÇŽ</div> from <main class="min-h-screen text-[#EAEAEA] selection:bg-[#3A0F14] selection:text-white pb-20">ÔÇŽ</main> subtree intercepts pointer events[22m
+    [2m    - retrying click action[22m
+    [2m      - waiting 100ms[22m
+    [2m    106 ├Ś waiting for element to be visible, enabled and stable[22m
+    [2m        - element is visible, enabled and stable[22m
+    [2m        - scrolling into view if needed[22m
+    [2m        - done scrolling[22m
+    [2m        - <div class="container relative z-10 mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center h-full pt-20">ÔÇŽ</div> from <main class="min-h-screen text-[#EAEAEA] selection:bg-[#3A0F14] selection:text-white pb-20">ÔÇŽ</main> subtree intercepts pointer events[22m
+    [2m      - retrying click action[22m
+    [2m        - waiting 500ms[22m
+    [2m    - waiting for element to be visible, enabled and stable[22m
+    [2m    - element is visible, enabled and stable[22m
+    [2m    - scrolling into view if needed[22m
+
+
+      281 |     
+      282 |     // Switch to EN first
+    > 283 |     await page.locator('button[aria-label="Change language"]').click();
+          |                                                                ^
+      284 |     await page.waitForTimeout(500);
+      285 |     await page.locator('button:has-text("English")').click();
+      286 |     await page.waitForTimeout(1000);
+        at F:\mcp-brunella-core\temp\Lumen-landing\test-audit.spec.ts:283:64
+
+    Error Context: test-results\test-audit-­čöŹ-Lumen-Landin-849e9-tch-back-to-Hungarian-works\error-context.md
+
+  7) test-audit.spec.ts:454:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 7.1 Mobile: language switcher is visible and usable 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeGreaterThan[2m([22m[32mexpected[39m[2m)[22m
+
+    Expected: > [32m0[39m
+    Received:   [31m-24[39m
+
+      463 |     console.log('­čô▒ Lang button position:', box);
+      464 |     expect(box).toBeTruthy();
+    > 465 |     expect(box!.x).toBeGreaterThan(0);
+          |                    ^
+      466 |     expect(box!.y).toBeGreaterThan(0);
+      467 |     
+      468 |     await page.screenshot({ path: 'audit-screenshots/mobile-lang-button.png' });
+        at F:\mcp-brunella-core\temp\Lumen-landing\test-audit.spec.ts:465:20
+
+    Error Context: test-results\test-audit-­čöŹ-Lumen-Landin-4aabb-tcher-is-visible-and-usable\error-context.md
+
+  8) test-audit.spec.ts:486:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 7.3 Mobile: no horizontal overflow 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32mfalse[39m
+    Received: [31mtrue[39m
+
+      493 |     
+      494 |     console.log('­čô▒ Horizontal overflow:', overflow);
+    > 495 |     expect(overflow).toBe(false);
+          |                      ^
+      496 |   });
+      497 |
+      498 |   test('7.4 Images are responsive (use next/image)', async ({ page }) => {
+        at F:\mcp-brunella-core\temp\Lumen-landing\test-audit.spec.ts:495:22
+
+    Error Context: test-results\test-audit-­čöŹ-Lumen-Landin-0974f-bile-no-horizontal-overflow\error-context.md
+
+  8 failed
+    test-audit.spec.ts:180:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 3.4 No broken images (all load successfully) 
+    test-audit.spec.ts:211:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 4.2 Language switcher opens on click 
+    test-audit.spec.ts:230:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 4.3 Language switch to English works 
+    test-audit.spec.ts:249:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 4.4 Language switch to Chinese works 
+    test-audit.spec.ts:264:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 4.5 Language switch to Thai works 
+    test-audit.spec.ts:279:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 4.6 Language switch back to Hungarian works 
+    test-audit.spec.ts:454:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 7.1 Mobile: language switcher is visible and usable 
+    test-audit.spec.ts:486:7 ÔÇ║ ­čöŹ Lumen Landing Page Full Audit ÔÇ║ 7.3 Mobile: no horizontal overflow 
+  31 passed (6.8m)

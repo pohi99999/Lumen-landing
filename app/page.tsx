@@ -64,7 +64,7 @@ function PageContent ()
 
         {/* Scroll indicator */ }
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center opacity-60">
-          <span className="uppercase tracking-[0.3em] text-[10px] mb-4">{ t.hero.scroll }</span>
+          <span className="uppercase tracking-[0.3em] text-xs mb-4">{ t.hero.scroll }</span>
           <ArrowDown className="w-4 h-4 animate-bounce" />
         </div>
       </section>
@@ -302,7 +302,7 @@ function PageContent ()
               { t.nextRelease.p1 }
             </p>
             <div className="pt-6">
-              <button className="border-b border-[#C6A15B] pb-2 uppercase tracking-[0.2em] text-sm text-[#C6A15B] hover:text-[#EAEAEA] hover:border-[#EAEAEA] transition-colors">
+              <button className="border-b border-[#C6A15B] pb-2 pt-2 min-h-[44px] uppercase tracking-[0.2em] text-sm text-[#C6A15B] hover:text-[#EAEAEA] hover:border-[#EAEAEA] transition-colors">
                 { t.nextRelease.cta }
               </button>
             </div>
@@ -323,10 +323,10 @@ function PageContent ()
 
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center border-t border-[#EAEAEA]/10 pt-12 text-sm font-sans tracking-widest text-[#EAEAEA]/40 gap-6">
           <div>© { new Date().getFullYear() } LUMEN COLLECTION</div>
-          <div className="flex gap-8 uppercase text-[10px]">
-            <a href="#" className="hover:text-[#EAEAEA] transition-colors">{ t.footer.imprint }</a>
-            <a href="#" className="hover:text-[#EAEAEA] transition-colors">{ t.footer.privacy }</a>
-            <a href="#" className="hover:text-[#EAEAEA] transition-colors">{ t.footer.contact }</a>
+          <div className="flex gap-8 uppercase text-xs">
+            <a href="#" className="hover:text-[#EAEAEA] transition-colors py-3 min-h-[44px] inline-flex items-center">{ t.footer.imprint }</a>
+            <a href="#" className="hover:text-[#EAEAEA] transition-colors py-3 min-h-[44px] inline-flex items-center">{ t.footer.privacy }</a>
+            <a href="#" className="hover:text-[#EAEAEA] transition-colors py-3 min-h-[44px] inline-flex items-center">{ t.footer.contact }</a>
           </div>
         </div>
       </footer>
