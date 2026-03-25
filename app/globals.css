@@ -44,9 +44,11 @@ body::before {
   pointer-events: none;
 }
 
-body > * {
-  position: relative;
-  z-index: 1;
+@layer base {
+  body > * {
+    position: relative;
+    z-index: 1;
+  }
 }
 
 /* Typography refinements */
