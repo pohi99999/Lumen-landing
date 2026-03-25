@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { FadeIn } from "@/components/FadeIn";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { BackToTop } from "@/components/BackToTop";
+import { CookieConsent } from "@/components/CookieConsent";
 import { useLanguage } from "@/lib/LanguageContext";
 import { ArrowDown, MapPin, Wine, ScanLine, ArrowRight } from "lucide-react";
 
@@ -12,6 +14,8 @@ export default function Home ()
     <>
       <LanguageSwitcher />
       <PageContent />
+      <BackToTop />
+      <CookieConsent />
     </>
   );
 }
@@ -21,14 +25,14 @@ function PageContent ()
   const { t } = useLanguage();
 
   return (
-    <main className="min-h-screen text-[#EAEAEA] selection:bg-[#3A0F14] selection:text-white pb-20">
+    <main id="main-content" role="main" className="min-h-screen text-[#EAEAEA] selection:bg-[#3A0F14] selection:text-white pb-20">
       {/* 1. HERO SZEKCIÓ */ }
       <section className="relative h-screen min-h-[800px] flex items-center justify-center overflow-hidden">
         {/* Background Image with parallax-like layering */ }
         <div className="absolute inset-0 z-0">
           <Image
             src="/1.jpg"
-            alt="Lumen kollekció"
+            alt={ t.alt.heroImage }
             fill
             className="object-cover opacity-30 mix-blend-overlay"
             priority
@@ -83,7 +87,7 @@ function PageContent ()
           <FadeIn direction="right" className="order-2 lg:order-1 relative aspect-[3/4] lg:aspect-auto lg:h-[800px] w-full max-w-md mx-auto grayscale-[20%]">
             <Image
               src="/2.jpg"
-              alt="A Lumen története"
+              alt={ t.alt.conceptImage }
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -125,7 +129,7 @@ function PageContent ()
           <FadeIn direction="left" className="relative aspect-[4/3] lg:aspect-square w-full opacity-80">
             <Image
               src="/3.jpg"
-              alt="Magyar táj, szőlőbirtok"
+              alt={ t.alt.heritageImage }
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -153,7 +157,7 @@ function PageContent ()
             <FadeIn delay={ 0.1 } direction="up" className="relative aspect-square overflow-hidden group">
               <Image
                 src="/4.jpg"
-                alt="Részlet 1"
+                alt={ t.alt.detail1 }
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
                 sizes="(max-width: 768px) 100vw, 33vw"
@@ -162,7 +166,7 @@ function PageContent ()
             <FadeIn delay={ 0.3 } direction="up" className="relative aspect-[3/4] md:-translate-y-12 overflow-hidden group">
               <Image
                 src="/1.jpg"
-                alt="Részlet 2"
+                alt={ t.alt.detail2 }
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
                 sizes="(max-width: 768px) 100vw, 33vw"
@@ -171,7 +175,7 @@ function PageContent ()
             <FadeIn delay={ 0.5 } direction="up" className="relative aspect-square md:translate-y-12 overflow-hidden group">
               <Image
                 src="/5.jpg"
-                alt="Részlet 3"
+                alt={ t.alt.detail3 }
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
                 sizes="(max-width: 768px) 100vw, 33vw"
@@ -232,7 +236,7 @@ function PageContent ()
             <div className="absolute inset-0 bg-gradient-to-b from-[#3A0F14]/20 to-transparent" />
             <Image
               src="/6.jpg"
-              alt="Hitelesítés"
+              alt={ t.alt.authImage }
               fill
               className="object-cover opacity-50 mix-blend-screen"
               sizes="(max-width: 1024px) 100vw, 400px"
@@ -272,7 +276,7 @@ function PageContent ()
           <FadeIn direction="right" className="relative aspect-video w-full overflow-hidden group">
             <Image
               src="/5.jpg"
-              alt="A következő kiadás"
+              alt={ t.alt.nextReleaseImage }
               fill
               className="object-cover opacity-60 grayscale-[40%] group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-700"
               sizes="(max-width: 1024px) 100vw, 50vw"

@@ -27,17 +27,29 @@ export const metadata: Metadata = {
     "A Lumen egy limitált, sorszámozott gyűjtői borkollekció Magyarországról. Minden kiadás egyedi, digitálisan hitelesített. Maximum 1500 palack kiadásonként.",
   keywords: [
     "Lumen",
+    "Lumen wine",
+    "Lumen Collection",
     "limitált bor",
     "gyűjtői borkollekció",
     "sorszámozott bor",
     "prémium magyar bor",
+    "magyar bor",
     "limited edition wine",
     "collector wine",
     "numbered wine collection",
     "Hungarian premium wine",
     "luxury wine",
+    "wine collection",
+    "fine wine Hungary",
+    "exclusive wine",
+    "numbered bottles",
+    "limited wine release",
     "限量葡萄酒",
     "收藏级葡萄酒",
+    "匈牙利葡萄酒",
+    "限量版",
+    "ไวน์สะสม",
+    "ไวน์ลิมิเต็ด",
   ],
   authors: [{ name: "Lumen Collection" }],
   creator: "Lumen Collection",
@@ -148,6 +160,33 @@ const organizationLd = {
   },
 };
 
+const websiteLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Lumen Collection",
+  url: "https://www.lumenlimitedseries.com",
+  description:
+    "Limitált, sorszámozott gyűjtői borkollekció Magyarországról.",
+  inLanguage: ["hu", "en", "zh", "th"],
+  publisher: {
+    "@type": "Organization",
+    name: "Lumen Collection",
+  },
+};
+
+const breadcrumbLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Lumen Collection",
+      item: "https://www.lumenlimitedseries.com",
+    },
+  ],
+};
+
 export default function RootLayout ( {
   children,
 }: Readonly<{
@@ -165,12 +204,30 @@ export default function RootLayout ( {
           type="application/ld+json"
           dangerouslySetInnerHTML={ { __html: JSON.stringify( organizationLd ) } }
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={ { __html: JSON.stringify( websiteLd ) } }
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={ { __html: JSON.stringify( breadcrumbLd ) } }
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <meta name="theme-color" content="#0B0B0B" />
+        <meta name="msapplication-TileColor" content="#3A0F14" />
+        <meta name="format-detection" content="telephone=no" />
+        <link rel="manifest" href="/manifest.json" />
       </head>
       <body
         className={ `${ montserrat.variable } ${ playfair.variable } antialiased bg-[#0B0B0B] text-[#EAEAEA] font-sans selection:bg-[#3A0F14] selection:text-white` }
       >
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-[#C6A15B] focus:text-[#0B0B0B] focus:rounded focus:text-sm focus:font-medium"
+        >
+          Skip to content
+        </a>
         <LanguageProvider>{ children }</LanguageProvider>
       </body>
     </html>

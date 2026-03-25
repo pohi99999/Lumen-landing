@@ -1,0 +1,13 @@
+# Lumen Collection
+# https://www.lumenlimitedseries.com
+
+User-agent: *
+Allow: /
+Disallow: /_next/
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://www.lumenlimitedseries.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1

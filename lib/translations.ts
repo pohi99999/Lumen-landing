@@ -83,6 +83,16 @@ export interface SiteTranslations {
     privacy: string;
     contact: string;
   };
+  alt: {
+    heroImage: string;
+    conceptImage: string;
+    heritageImage: string;
+    detail1: string;
+    detail2: string;
+    detail3: string;
+    authImage: string;
+    nextReleaseImage: string;
+  };
 }
 
 export const translations: Record<Locale, SiteTranslations> = {
@@ -162,6 +172,16 @@ export const translations: Record<Locale, SiteTranslations> = {
       imprint: "Impresszum",
       privacy: "Adatkezelés",
       contact: "Kapcsolat",
+    },
+    alt: {
+      heroImage: "Lumen limitált borkollekció bemutató",
+      conceptImage: "A Lumen története — prémium borpalack",
+      heritageImage: "Magyar szőlőbirtok táj, borászati hagyomány",
+      detail1: "Lumen kollekció részlet — csomagolás",
+      detail2: "Lumen prémium borpalack közeli",
+      detail3: "Lumen kiadás — exkluzív részlet",
+      authImage: "Digitális hitelesítés és QR-kód",
+      nextReleaseImage: "A következő Lumen kiadás előzetese",
     },
   },
 
@@ -245,6 +265,16 @@ export const translations: Record<Locale, SiteTranslations> = {
       privacy: "Privacy",
       contact: "Contact",
     },
+    alt: {
+      heroImage: "Lumen limited wine collection showcase",
+      conceptImage: "The story of Lumen — premium wine bottle",
+      heritageImage: "Hungarian vineyard landscape, winemaking heritage",
+      detail1: "Lumen collection detail — packaging",
+      detail2: "Lumen premium wine bottle close-up",
+      detail3: "Lumen release — exclusive detail",
+      authImage: "Digital authentication and QR code verification",
+      nextReleaseImage: "Preview of the next Lumen release",
+    },
   },
 
   zh: {
@@ -324,6 +354,16 @@ export const translations: Record<Locale, SiteTranslations> = {
       imprint: "法律声明",
       privacy: "隐私政策",
       contact: "联系我们",
+    },
+    alt: {
+      heroImage: "Lumen限量葡萄酒收藏展示",
+      conceptImage: "Lumen的故事——高端葡萄酒瓶",
+      heritageImage: "匈牙利葡萄园风景，酿酒传统",
+      detail1: "Lumen收藏细节——包装",
+      detail2: "Lumen高端葡萄酒瓶特写",
+      detail3: "Lumen发行——独家细节",
+      authImage: "数字认证与二维码验证",
+      nextReleaseImage: "下一期Lumen预告",
     },
   },
 
@@ -406,6 +446,16 @@ export const translations: Record<Locale, SiteTranslations> = {
       imprint: "ข้อกฎหมาย",
       privacy: "นโยบายความเป็นส่วนตัว",
       contact: "ติดต่อเรา",
+    },
+    alt: {
+      heroImage: "คอลเลกชันไวน์ Lumen จำนวนจำกัด",
+      conceptImage: "เรื่องราวของ Lumen — ขวดไวน์พรีเมียม",
+      heritageImage: "ทิวทัศน์ไร่องุ่นฮังการี มรดกการทำไวน์",
+      detail1: "รายละเอียดคอลเลกชัน Lumen — บรรจุภัณฑ์",
+      detail2: "ขวดไวน์พรีเมียม Lumen ระยะใกล้",
+      detail3: "การเปิดตัว Lumen — รายละเอียดพิเศษ",
+      authImage: "การรับรองดิจิทัลและการตรวจสอบ QR Code",
+      nextReleaseImage: "ตัวอย่างการเปิดตัว Lumen ครั้งถัดไป",
     },
   },
 };
