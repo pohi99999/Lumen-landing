@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useLanguage } from "@/lib/LanguageContext";
 import { X } from "lucide-react";
 
@@ -29,12 +29,15 @@ const cookieTexts = {
 
 export function CookieConsent() {
   const { locale } = useLanguage();
-  const [dismissed, setDismissed] = useState(() => {
-    if (typeof window !== "undefined") {
-      return localStorage.getItem("lumen-cookies") !== null;
+  // Start with false to match SSR output — avoids hydration mismatch
+  const [dismissed, setDismissed] = useState(false);
+
+  // Check localStorage AFTER hydration to avoid SSR/client mismatch
+  useEffect(() => {
+    if (localStorage.getItem("lumen-cookies") !== null) {
+      setDismissed(true);
     }
-    return false;
-  });
+  }, []);
 
   if (dismissed) return null;
 
