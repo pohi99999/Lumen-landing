@@ -141,7 +141,7 @@ export const translations: Record<Locale, SiteTranslations> = {
     exclusivity: {
       label: "Korlátozott elérés",
       number: "1500",
-      unit: "PALACK",
+      unit: "palack",
       heading: "Nem minden döntés kérdése.",
       p1: "Van, amikor az számít, hogy valaki éppen ott van. Abban a városban. Abban az időben.",
       p2: "Minden kiadás egy szűk kör számára válik elérhetővé. Legfeljebb 1500 palack. Nem ismételhető. Nem pótolható.",
@@ -230,7 +230,7 @@ export const translations: Record<Locale, SiteTranslations> = {
     exclusivity: {
       label: "Limited access",
       number: "1500",
-      unit: "BOTTLES",
+      unit: "bottles",
       heading: "Not every decision is about choice.",
       p1: "Sometimes what matters is being there. In that city. At that time.",
       p2: "Each release becomes available to a select few. A maximum of 1500 bottles. Unrepeatable. Irreplaceable.",
