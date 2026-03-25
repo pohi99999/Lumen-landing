@@ -27,7 +27,7 @@ function PageContent ()
   return (
     <main id="main-content" role="main" className="min-h-screen text-[#EAEAEA] selection:bg-[#3A0F14] selection:text-white pb-20">
       {/* 1. HERO SZEKCIÓ */ }
-      <section className="relative h-screen min-h-[800px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-screen md:min-h-[800px] flex items-center justify-center overflow-hidden">
         {/* Background Image with parallax-like layering */ }
         <div className="absolute inset-0 z-0">
           <Image
@@ -42,7 +42,7 @@ function PageContent ()
           <div className="absolute inset-0 bg-gradient-to-r from-[#0B0B0B] via-[#0B0B0B]/40 to-transparent" />
         </div>
 
-        <div className="container relative z-10 mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center h-full pt-20">
+        <div className="container relative z-10 mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center h-full pt-20 pb-28">
           <FadeIn direction="up">
             <h1 className="font-[family-name:var(--font-display)] text-5xl md:text-7xl lg:text-8xl font-light tracking-wide mb-6 text-[#EAEAEA] drop-shadow-lg leading-tight text-glow-gold whitespace-pre-line">
               { t.hero.heading }
@@ -50,7 +50,7 @@ function PageContent ()
             <p className="font-sans font-light text-lg md:text-xl max-w-lg mb-8 text-[#EAEAEA]/80 tracking-wide leading-relaxed">
               { t.hero.subheading }
             </p>
-            <p className="font-serif italic text-2xl text-[#C6A15B] mb-12">
+            <p className="font-serif italic text-2xl text-[#C6A15B] mb-6 md:mb-12">
               &ldquo;{ t.hero.quote }&rdquo;
             </p>
             <a
