@@ -105,10 +105,10 @@ function PageContent() {
           </FadeIn>
           <FadeIn direction="left" className="order-1 lg:order-2 space-y-8 lg:pr-12">
             <Wine className="w-8 h-8 text-[#C6A15B] mb-8 opacity-50" />
-            <h2 className="font-serif text-4xl md:text-5xl font-light whitespace-pre-line text-glow-gold leading-tight">
+            <h2 className="font-serif italic text-4xl md:text-5xl font-light whitespace-pre-line text-glow-gold leading-tight">
               {t.concept.heading}
             </h2>
-            <div className="font-sans font-light text-[#EAEAEA]/70 space-y-6 text-lg tracking-wide leading-relaxed">
+            <div className="font-serif italic font-light text-[#EAEAEA]/70 space-y-6 text-lg tracking-wide leading-relaxed">
               <p>{t.concept.p1}</p>
               <p>{t.concept.p2}</p>
               <p>{t.concept.p3}</p>
@@ -122,10 +122,10 @@ function PageContent() {
         <div className="absolute inset-0 bg-black/20 backdrop-blur-[2px]" />
         <div className="container mx-auto grid lg:grid-cols-2 gap-16 lg:gap-24 items-center relative z-10">
           <FadeIn direction="right" className="space-y-8 lg:pl-12">
-            <h2 className="font-serif text-4xl md:text-5xl font-light text-[#EAEAEA] whitespace-pre-line text-glow-gold leading-tight">
+            <h2 className="font-serif italic text-4xl md:text-5xl font-light text-[#EAEAEA] whitespace-pre-line text-glow-gold leading-tight">
               {t.heritage.heading}
             </h2>
-            <div className="font-sans font-light text-[#EAEAEA]/70 space-y-6 text-lg tracking-wide leading-relaxed">
+            <div className="font-serif italic font-light text-[#EAEAEA]/70 space-y-6 text-lg tracking-wide leading-relaxed">
               <p>{t.heritage.p1}</p>
               <p>{t.heritage.p2}</p>
               <p>{t.heritage.p3}</p>
@@ -153,10 +153,10 @@ function PageContent() {
       <section className="py-32 px-6">
         <div className="container mx-auto">
           <FadeIn direction="up" className="text-center max-w-3xl mx-auto mb-20 space-y-8">
-            <h2 className="font-serif text-4xl md:text-5xl font-light whitespace-pre-line text-glow-gold leading-tight">
+            <h2 className="font-serif italic text-4xl md:text-5xl font-light whitespace-pre-line text-glow-gold leading-tight">
               {t.experience.heading}
             </h2>
-            <div className="font-sans font-light text-[#EAEAEA]/70 text-lg tracking-wide space-y-4 leading-relaxed">
+            <div className="font-serif italic font-light text-[#EAEAEA]/70 text-lg tracking-wide space-y-4 leading-relaxed">
               <p>{t.experience.p1}</p>
               <p>{t.experience.p2}</p>
             </div>
@@ -190,18 +190,18 @@ function PageContent() {
               {t.exclusivity.label}
             </span>
             <div className="flex items-baseline justify-center gap-4 md:gap-6 mb-10">
-              <span className="font-serif text-7xl md:text-8xl lg:text-9xl font-light text-gradient-gold leading-none">
+              <span className="font-serif italic text-7xl md:text-8xl lg:text-9xl font-light text-[#EAEAEA] leading-none">
                 {t.exclusivity.number}
               </span>
-              <span className="font-serif text-xl md:text-2xl text-[#C6A15B]/70 font-light tracking-wider lowercase">
+              <span className="font-serif italic text-xl md:text-2xl text-[#EAEAEA]/70 font-light tracking-wider lowercase">
                 {t.exclusivity.unit}
               </span>
             </div>
             <div className="section-divider mx-auto mb-12" />
-            <h2 className="font-serif text-4xl md:text-5xl font-light mb-8 max-w-2xl mx-auto leading-tight text-glow-gold whitespace-pre-line">
+            <h2 className="font-serif italic text-4xl md:text-5xl font-light mb-8 max-w-2xl mx-auto leading-tight text-glow-gold whitespace-pre-line">
               {t.exclusivity.heading}
             </h2>
-            <div className="font-sans font-light text-[#EAEAEA]/70 text-lg tracking-wide max-w-2xl mx-auto space-y-5 leading-relaxed">
+            <div className="font-serif italic font-light text-[#EAEAEA]/70 text-lg tracking-wide max-w-2xl mx-auto space-y-5 leading-relaxed">
               <p>{t.exclusivity.p1}</p>
               <p>{t.exclusivity.p2}</p>
               <p className="text-[#C6A15B] font-normal italic pt-6 font-serif text-xl">{t.exclusivity.accent}</p>
@@ -214,10 +214,10 @@ function PageContent() {
         <div className="container mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <FadeIn direction="right" className="space-y-8">
             <ScanLine className="w-10 h-10 text-[#EAEAEA] mb-6 opacity-60" />
-            <h2 className="font-serif text-4xl md:text-5xl font-light text-glow-gold leading-tight whitespace-pre-line">
+            <h2 className="font-serif italic text-4xl md:text-5xl font-light text-glow-gold leading-tight whitespace-pre-line">
               {t.authenticity.heading}
             </h2>
-            <div className="font-sans font-light text-[#EAEAEA]/70 text-lg tracking-wide space-y-6 leading-relaxed">
+            <div className="font-serif italic font-light text-[#EAEAEA]/70 text-lg tracking-wide space-y-6 leading-relaxed">
               <p>{t.authenticity.p1}</p>
               <p>{t.authenticity.p2}</p>
               <p className="text-[#EAEAEA]/90">{t.authenticity.p3}</p>
@@ -243,10 +243,10 @@ function PageContent() {
         <div className="container mx-auto max-w-4xl text-center space-y-12">
           <FadeIn direction="up">
             <MapPin className="w-10 h-10 mx-auto text-[#C6A15B] mb-8" />
-            <h2 className="font-serif text-4xl md:text-5xl font-light mb-8 text-glow-gold leading-tight whitespace-pre-line">
+            <h2 className="font-serif italic text-4xl md:text-5xl font-light mb-8 text-glow-gold leading-tight whitespace-pre-line">
               {t.partners.heading}
             </h2>
-            <div className="font-sans font-light text-[#EAEAEA]/70 text-lg tracking-wide space-y-6 mb-16 leading-relaxed">
+            <div className="font-serif italic font-light text-[#EAEAEA]/70 text-lg tracking-wide space-y-6 mb-16 leading-relaxed">
               <p>{t.partners.p1}</p>
               <p>{t.partners.p2}</p>
               <p>{t.partners.p3}</p>
@@ -266,10 +266,10 @@ function PageContent() {
             <Image src="/5.jpg" alt={t.alt.nextReleaseImage} fill className="object-cover opacity-60 grayscale-[40%] group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-700" sizes="(max-width: 1024px) 100vw, 50vw" />
           </FadeIn>
           <FadeIn direction="left" className="space-y-8 lg:pl-16">
-            <h2 className="font-serif text-4xl md:text-5xl font-light text-glow-gold leading-tight">
+            <h2 className="font-serif italic text-4xl md:text-5xl font-light text-glow-gold leading-tight">
               {t.nextRelease.heading}
             </h2>
-            <p className="font-sans font-light text-[#EAEAEA]/70 text-lg tracking-wide leading-relaxed whitespace-pre-line">
+            <p className="font-serif italic font-light text-[#EAEAEA]/70 text-lg tracking-wide leading-relaxed whitespace-pre-line">
               {t.nextRelease.p1}
             </p>
             <div className="pt-6">
@@ -283,7 +283,7 @@ function PageContent() {
 
       <footer className="pt-32 pb-12 px-6 text-center">
         <FadeIn direction="up" className="mb-32">
-          <h2 className="font-serif text-4xl md:text-6xl font-light mb-8 text-[#EAEAEA]/90 leading-tight text-glow-gold">
+          <h2 className="font-serif italic text-4xl md:text-6xl font-light mb-8 text-[#EAEAEA]/90 leading-tight text-glow-gold">
             {t.closing.heading}
           </h2>
           <p className="font-serif text-xl md:text-2xl text-[#C6A15B] italic">
