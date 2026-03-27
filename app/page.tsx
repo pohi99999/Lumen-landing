@@ -51,7 +51,7 @@ function PageContent() {
             <p className="uppercase tracking-[0.3em] text-[#C6A15B]/75 text-xs md:text-sm mb-8 font-light font-sans">
               Lumen &mdash; {t.exclusivity.label}
             </p>
-            <h1 className="font-serif text-5xl md:text-7xl lg:text-[6rem] xl:text-[7rem] font-light whitespace-pre-line text-glow-gold leading-[1.05] mb-8 md:mb-10 text-[#EAEAEA]">
+            <h1 className="font-serif italic text-5xl md:text-7xl lg:text-[6rem] xl:text-[7rem] font-light whitespace-pre-line text-glow-gold leading-[1.05] mb-8 md:mb-10 text-[#EAEAEA]">
               {t.hero.heading}
             </h1>
             <p className="font-sans font-light text-lg md:text-xl max-w-lg mb-6 text-[#EAEAEA]/70 tracking-wide leading-relaxed">
@@ -80,10 +80,10 @@ function PageContent() {
       <section className="py-32 md:py-48 px-6 text-center relative max-w-4xl mx-auto">
         <FadeIn direction="up">
           <div className="space-y-12 font-serif text-2xl md:text-3xl leading-relaxed text-[#EAEAEA]/85 font-light">
-            <p className="whitespace-pre-line">{t.intro.line1}</p>
+            <p className="whitespace-pre-line italic">{t.intro.line1}</p>
             <div className="section-divider mx-auto" />
             <p>{t.intro.line2}</p>
-            <p className="text-[#C6A15B] whitespace-pre-line">{t.intro.line3}</p>
+            <p className="text-[#C6A15B] whitespace-pre-line italic">{t.intro.line3}</p>
           </div>
         </FadeIn>
       </section>
