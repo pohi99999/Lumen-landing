@@ -27,25 +27,29 @@ const cookieTexts = {
   },
 };
 
-export function CookieConsent() {
+export function CookieConsent ()
+{
   const { locale } = useLanguage();
   // Start with false to match SSR output — avoids hydration mismatch
-  const [dismissed, setDismissed] = useState(false);
+  const [dismissed, setDismissed] = useState( false );
 
   // Check localStorage AFTER hydration to avoid SSR/client mismatch
-  useEffect(() => {
-    if (localStorage.getItem("lumen-cookies") !== null) {
-      setDismissed(true);
+  useEffect( () =>
+  {
+    if ( localStorage.getItem( "lumen-cookies" ) !== null )
+    {
+      setDismissed( true );
     }
-  }, []);
+  }, [] );
 
-  if (dismissed) return null;
+  if ( dismissed ) return null;
 
   const t = cookieTexts[locale];
 
-  const handleChoice = (accepted: boolean) => {
-    localStorage.setItem("lumen-cookies", accepted ? "accepted" : "declined");
-    setDismissed(true);
+  const handleChoice = ( accepted: boolean ) =>
+  {
+    localStorage.setItem( "lumen-cookies", accepted ? "accepted" : "declined" );
+    setDismissed( true );
   };
 
   return (
@@ -56,19 +60,19 @@ export function CookieConsent() {
         </p>
         <div className="flex items-center gap-3 shrink-0">
           <button
-            onClick={() => handleChoice(true)}
+            onClick={() => handleChoice( true )}
             className="px-6 py-2.5 bg-[#C6A15B] text-[#0B0B0B] text-xs uppercase tracking-[0.15em] font-medium rounded-full hover:bg-[#E5D5A0] transition-colors"
           >
             {t.accept}
           </button>
           <button
-            onClick={() => handleChoice(false)}
+            onClick={() => handleChoice( false )}
             className="px-6 py-2.5 border border-[#EAEAEA]/20 text-[#EAEAEA]/60 text-xs uppercase tracking-[0.15em] rounded-full hover:border-[#EAEAEA]/40 hover:text-[#EAEAEA] transition-colors"
           >
             {t.decline}
           </button>
           <button
-            onClick={() => handleChoice(false)}
+            onClick={() => handleChoice( false )}
             className="p-1.5 text-[#EAEAEA]/30 hover:text-[#EAEAEA] transition-colors"
             aria-label="Close"
           >

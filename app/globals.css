@@ -12,7 +12,7 @@
   --color-lumen-bordeaux: #3A0F14;
   --color-lumen-gold: #C6A15B;
   --color-lumen-white: #EAEAEA;
-  --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-playfair), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   --font-display: var(--font-playfair), ui-serif, Georgia, serif;
 }
@@ -138,10 +138,10 @@ html {
 
 /* CJK (Chinese) and Thai font stack improvements */
 :lang(zh) {
-  font-family: var(--font-montserrat), "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  font-family: var(--font-inter), "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
 }
 :lang(th) {
-  font-family: var(--font-montserrat), "Noto Sans Thai", "Sarabun", sans-serif;
+  font-family: var(--font-inter), "Noto Sans Thai", "Sarabun", sans-serif;
 }
 
 /* Animate-in utility for dropdown */

@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Montserrat, Playfair_Display } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 import { LanguageProvider } from "@/lib/LanguageContext";
 import "./globals.css";
 
-const montserrat = Montserrat( {
-  variable: "--font-montserrat",
+const inter = Inter( {
+  variable: "--font-inter",
   subsets: ["latin", "latin-ext"],
   weight: ["300", "400", "500", "600", "700"],
   display: "swap",
@@ -198,19 +198,19 @@ export default function RootLayout ( {
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={ { __html: JSON.stringify( jsonLd ) } }
+          dangerouslySetInnerHTML={{ __html: JSON.stringify( jsonLd ) }}
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={ { __html: JSON.stringify( organizationLd ) } }
+          dangerouslySetInnerHTML={{ __html: JSON.stringify( organizationLd ) }}
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={ { __html: JSON.stringify( websiteLd ) } }
+          dangerouslySetInnerHTML={{ __html: JSON.stringify( websiteLd ) }}
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={ { __html: JSON.stringify( breadcrumbLd ) } }
+          dangerouslySetInnerHTML={{ __html: JSON.stringify( breadcrumbLd ) }}
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -220,7 +220,7 @@ export default function RootLayout ( {
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body
-        className={ `${ montserrat.variable } ${ playfair.variable } antialiased bg-[#0B0B0B] text-[#EAEAEA] font-sans selection:bg-[#3A0F14] selection:text-white` }
+        className={`${ inter.variable } ${ playfair.variable } antialiased bg-[#0B0B0B] text-[#EAEAEA] font-sans selection:bg-[#3A0F14] selection:text-white`}
       >
         <a
           href="#main-content"
@@ -228,7 +228,7 @@ export default function RootLayout ( {
         >
           Skip to content
         </a>
-        <LanguageProvider>{ children }</LanguageProvider>
+        <LanguageProvider>{children}</LanguageProvider>
       </body>
     </html>
   );
