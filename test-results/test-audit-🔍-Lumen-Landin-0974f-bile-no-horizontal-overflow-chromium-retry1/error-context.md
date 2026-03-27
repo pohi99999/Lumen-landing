@@ -1,0 +1,118 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - button "Change language" [ref=e4]:
+    - img [ref=e5]
+    - generic [ref=e8]: 🇭🇺 Magyar
+  - main [ref=e9]:
+    - generic [ref=e10]:
+      - img "Lumen limitált borkollekció bemutató" [ref=e12]
+      - generic [ref=e17]:
+        - paragraph [ref=e18]: Lumen — Korlátozott elérés
+        - heading "Nem minden kerül a világ elé." [level=1] [ref=e19]
+        - paragraph [ref=e20]: A Lumen egy limitált, sorszámozott gyűjtői borkollekció — azok számára, akik értik a ritkaság valódi jelentését.
+        - paragraph [ref=e21]: “A ritkaságnak nem kell elérhetetlennek lennie.”
+        - link "Elérhetőség megtekintése" [ref=e22] [cursor=pointer]:
+          - /url: "#partnerek"
+      - generic [ref=e23]:
+        - generic [ref=e24]: Görgessen
+        - img [ref=e25]
+    - generic [ref=e29]:
+      - paragraph [ref=e30]: Vannak dolgok, amelyek nem sietnek. Idő kell hozzájuk. Figyelem. Csend.
+      - paragraph [ref=e32]: A Lumen nem a pillanatnak készül — hanem azoknak, akik észreveszik a pillanat értékét.
+      - paragraph [ref=e33]: Nem mindenhol jelenik meg. És nem marad sokáig.
+    - generic [ref=e35]:
+      - img "A Lumen története — prémium borpalack" [ref=e37]
+      - generic [ref=e39]:
+        - img [ref=e40]
+        - heading "Minden Lumen kiadás egy önálló történet." [level=2] [ref=e42]
+        - generic [ref=e43]:
+          - paragraph [ref=e44]: Egy adott időszak lenyomata, egy gondosan kiválasztott bor, és egy kollekció, amelyből csak korlátozott számú darab létezik.
+          - paragraph [ref=e45]: Minden palack sorszámozott. Minden darab egy helyhez és egy időhöz kötődik.
+          - paragraph [ref=e46]: Amikor egy kiadás elfogy, nem tér vissza ugyanabban a formában.
+          - paragraph [ref=e47]: Egyszer volt. És aki ott volt, emlékszik rá.
+    - generic [ref=e50]:
+      - generic [ref=e51]:
+        - heading "A Lumen gyökerei mélyre nyúlnak." [level=2] [ref=e52]
+        - generic [ref=e53]:
+          - paragraph [ref=e54]: Magyarország borászata évszázadok óta formálódik — föld, klíma és emberi tudás finom egyensúlyából.
+          - paragraph [ref=e55]: Ez a tudás nem látványos. Nem hangos. Hanem rétegről rétegre épül.
+          - paragraph [ref=e56]: A Lumen ezt az örökséget emeli ki, és ad neki egy új, kortárs formát.
+          - paragraph [ref=e57]: “Egy palack, amely nemcsak megőriz, hanem tovább is mesél.”
+      - img "Magyar szőlőbirtok táj, borászati hagyomány" [ref=e59]
+    - generic [ref=e62]:
+      - generic [ref=e63]:
+        - heading "A Lumen nem csupán egy tárgy." [level=2] [ref=e64]
+        - generic [ref=e65]:
+          - paragraph [ref=e66]: Sorszámozott és digitálisan hitelesített.
+          - paragraph [ref=e67]: A QR-kódon keresztül visszakövethető a kollekció eredete, története és helye.
+        - paragraph [ref=e68]: Egyfajta biztos pont — egy világban, ahol a valódi érték ritkán egyértelmű.
+      - generic [ref=e69]:
+        - img "Lumen kollekció részlet — csomagolás" [ref=e71]
+        - img "Lumen prémium borpalack közeli" [ref=e73]
+        - img "Lumen kiadás — exkluzív részlet" [ref=e75]
+    - generic [ref=e79]:
+      - generic [ref=e81]: Korlátozott elérés
+      - generic [ref=e82]:
+        - generic [ref=e83]: "1500"
+        - generic [ref=e84]: palack
+      - heading "Nem minden döntés kérdése." [level=2] [ref=e86]
+      - generic [ref=e87]:
+        - paragraph [ref=e88]: Van, amikor az számít, hogy valaki éppen ott van. Abban a városban. Abban az időben.
+        - paragraph [ref=e89]: Minden kiadás egy szűk kör számára válik elérhetővé. Legfeljebb 1500 palack. Nem ismételhető. Nem pótolható.
+        - paragraph [ref=e90]: Akik hozzájutnak, nemcsak birtokolják — hanem részesei lesznek egy adott pillanatnak.
+    - generic [ref=e92]:
+      - generic [ref=e93]:
+        - img [ref=e94]
+        - heading "Minden palack egyedi." [level=2] [ref=e99]
+        - generic [ref=e100]:
+          - paragraph [ref=e101]: Sorszámozott és digitálisan hitelesített.
+          - paragraph [ref=e102]: A QR-kódon keresztül visszakövethető a kollekció eredete, története és helye.
+          - paragraph [ref=e103]: Egyfajta biztos pont — egy világban, ahol a valódi érték ritkán egyértelmű.
+        - link "Helyi elérhetőség megtekintése" [ref=e105] [cursor=pointer]:
+          - /url: "#partnerek"
+          - text: Helyi elérhetőség megtekintése
+          - img [ref=e106]
+      - img "Digitális hitelesítés és QR-kód" [ref=e110]
+    - generic [ref=e115]:
+      - img [ref=e116]
+      - heading "A Lumen nem közvetlen értékesítésben jelenik meg." [level=2] [ref=e119]
+      - generic [ref=e120]:
+        - paragraph [ref=e121]: Minden régióban gondosan kiválasztott partnereken keresztül válik elérhetővé.
+        - paragraph [ref=e122]: Ők nem csupán disztribútorok. Hanem közvetítők.
+        - paragraph [ref=e123]: Egy korlátozott örökség továbbadásában vesznek részt — felelősséggel és érzékenységgel.
+      - button "Helyi elérhetőség megtekintése" [ref=e124]:
+        - text: Helyi elérhetőség megtekintése
+        - img [ref=e125]
+    - generic [ref=e129]:
+      - img "A következő Lumen kiadás előzetese" [ref=e131]
+      - generic [ref=e132]:
+        - heading "A történet folytatódik." [level=2] [ref=e133]
+        - paragraph [ref=e134]: Évente néhány új kollekció jelenik meg, mindegyik saját karakterrel és történettel. A következő kiadás már formálódik.
+        - button "Értesítést kérek" [ref=e136]
+    - generic [ref=e137]:
+      - generic [ref=e138]:
+        - heading "Nem minden marad elérhető." [level=2] [ref=e139]
+        - paragraph [ref=e140]: És talán éppen ezért válik igazán értékessé.
+      - generic [ref=e141]:
+        - generic [ref=e142]: © 2026 LUMEN COLLECTION
+        - generic [ref=e143]:
+          - link "Impresszum" [ref=e144] [cursor=pointer]:
+            - /url: "#"
+          - link "Adatkezelés" [ref=e145] [cursor=pointer]:
+            - /url: "#"
+          - link "Kapcsolat" [ref=e146] [cursor=pointer]:
+            - /url: "#"
+  - dialog "Cookie consent" [ref=e147]:
+    - generic [ref=e148]:
+      - paragraph [ref=e149]: Ez a weboldal sütiket használ a legjobb felhasználói élmény biztosítása érdekében.
+      - generic [ref=e150]:
+        - button "Elfogadom" [ref=e151]
+        - button "Elutasítom" [ref=e152]
+        - button "Close" [ref=e153]:
+          - img [ref=e154]
+  - alert [ref=e157]
+```

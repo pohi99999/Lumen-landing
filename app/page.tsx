@@ -164,15 +164,18 @@ function PageContent() {
               {t.experience.accent}
             </p>
           </FadeIn>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 opacity-90">
-            <FadeIn delay={0.1} direction="up" className="relative aspect-square overflow-hidden group">
-              <Image src="/4.jpg" alt={t.alt.detail1} fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="(max-width: 768px) 100vw, 33vw" />
+          <div className="grid grid-cols-2 md:grid-cols-2 gap-4 md:gap-6 opacity-90">
+            <FadeIn delay={0.1} direction="up" className="relative aspect-[3/4] overflow-hidden group">
+              <Image src="/1.jpg" alt={t.alt.detail1} fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="(max-width: 768px) 50vw, 25vw" />
             </FadeIn>
-            <FadeIn delay={0.3} direction="up" className="relative aspect-[3/4] md:-translate-y-12 overflow-hidden group">
-              <Image src="/1.jpg" alt={t.alt.detail2} fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="(max-width: 768px) 100vw, 33vw" />
+            <FadeIn delay={0.2} direction="up" className="relative aspect-[3/4] overflow-hidden group">
+              <Image src="/2.jpg" alt={t.alt.detail2} fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="(max-width: 768px) 50vw, 25vw" />
             </FadeIn>
-            <FadeIn delay={0.5} direction="up" className="relative aspect-square md:translate-y-12 overflow-hidden group">
-              <Image src="/5.jpg" alt={t.alt.detail3} fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="(max-width: 768px) 100vw, 33vw" />
+            <FadeIn delay={0.3} direction="up" className="relative aspect-[3/4] overflow-hidden group">
+              <Image src="/3.jpg" alt={t.alt.detail3} fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="(max-width: 768px) 50vw, 25vw" />
+            </FadeIn>
+            <FadeIn delay={0.4} direction="up" className="relative aspect-[3/4] overflow-hidden group">
+              <Image src="/4.jpg" alt={t.alt.detail1} fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="(max-width: 768px) 50vw, 25vw" />
             </FadeIn>
           </div>
         </div>

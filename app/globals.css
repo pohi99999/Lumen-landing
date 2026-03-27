@@ -13,8 +13,8 @@
   --color-lumen-gold: #C6A15B;
   --color-lumen-white: #EAEAEA;
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-playfair), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  --font-display: var(--font-playfair), ui-serif, Georgia, serif;
+  --font-serif: var(--font-cormorant), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-display: var(--font-cormorant), ui-serif, Georgia, serif;
 }
 
 /* Global background: luxurious red silk texture */
