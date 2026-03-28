@@ -21,6 +21,8 @@ export default function Home() {
 
 function PageContent() {
   const { t } = useLanguage();
+  const [heroHeadingLead, ...heroHeadingTailParts] = t.hero.heading.split(" — ");
+  const heroHeadingTail = heroHeadingTailParts.join(" — ");
 
   return (
     <main
@@ -28,48 +30,60 @@ function PageContent() {
       role="main"
       className="min-h-screen text-[#EAEAEA] selection:bg-[#3A0F14] selection:text-white pb-20"
     >
-      <section className="relative h-screen md:min-h-[900px] flex items-center overflow-hidden">
+      <section className="relative flex min-h-screen items-start overflow-hidden py-16 sm:py-24 md:min-h-[900px] md:items-center md:py-0">
         <div className="absolute inset-0 z-0">
-          <Image
-            src="/5.jpg"
-            alt={t.alt.heroImage}
-            fill
-            className="object-cover object-center"
-            style={{ opacity: 0.45 }}
-            priority
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0B]/85 via-[#0B0B0B]/20 to-[#0B0B0B]/45" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0B0B0B]/80 via-[#0B0B0B]/35 to-transparent" />
-          <div className="absolute inset-0 bg-[#1a050a]/18 mix-blend-multiply" />
-          <div className="hero-grain" />
-          <div className="hero-vignette" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0B0B0B]/78 via-[#160609]/34 to-[#0B0B0B]/48" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_78%_42%,rgba(198,161,91,0.12),transparent_28%),radial-gradient(circle_at_18%_24%,rgba(58,15,20,0.28),transparent_34%)]" />
         </div>
 
-        <div className="relative z-10 w-full px-6 md:px-16 lg:px-24 max-w-5xl">
-          <FadeIn direction="up">
-            <p className="uppercase tracking-[0.3em] text-[#C6A15B]/75 text-xs md:text-sm mb-8 font-light font-serif italic">
-              Lumen &mdash; {t.exclusivity.label}
-            </p>
-            <h1 className="font-serif italic text-[2.5rem] md:text-6xl lg:text-[5rem] xl:text-[5.8rem] font-light whitespace-pre-line text-glow-gold leading-[1.05] mb-8 md:mb-10 text-[#EAEAEA]">
-              {t.hero.heading}
-            </h1>
-            <p className="font-serif italic font-light text-lg md:text-xl max-w-lg mb-6 text-[#EAEAEA]/70 tracking-wide leading-relaxed">
-              {t.hero.subheading}
-            </p>
-            <p className="font-serif italic text-xl md:text-2xl text-[#C6A15B] mb-10 md:mb-14">
-              &ldquo;{t.hero.quote}&rdquo;
-            </p>
-            <a
-              href="#partnerek"
-              className="inline-flex items-center gap-3 border border-[#C6A15B]/40 px-8 py-4 uppercase tracking-[0.2em] text-sm hover:bg-[#C6A15B] hover:text-[#0B0B0B] transition-all duration-500 ease-out backdrop-blur-sm"
-            >
-              {t.hero.cta}
-            </a>
-          </FadeIn>
+        <div className="relative z-10 w-full px-6 md:px-16 lg:px-24">
+          <div className="mx-auto grid max-w-7xl items-center gap-8 sm:gap-10 lg:grid-cols-[minmax(0,0.78fr)_minmax(0,1.22fr)] lg:gap-16">
+            <FadeIn direction="up">
+              <p className="mb-6 font-serif text-[11px] font-light italic uppercase tracking-[0.3em] text-[#C6A15B]/75 md:mb-8 md:text-sm">
+                Lumen &mdash; {t.exclusivity.label}
+              </p>
+              <h1 className="mb-6 max-w-[15.25ch] font-serif text-[1.42rem] font-light italic leading-[1.03] text-[#EAEAEA] text-balance text-glow-gold sm:mb-7 sm:max-w-[15ch] sm:text-[1.82rem] sm:leading-[1.06] md:mb-10 md:max-w-[11.5ch] md:text-[3.1rem] md:leading-[1.08] lg:max-w-[12ch] lg:text-[3.75rem] xl:text-[4.15rem]">
+                <span className="block md:inline">{heroHeadingLead}</span>
+                {heroHeadingTail ? (
+                  <>
+                    <span className="hidden md:inline"> — </span>
+                    <span className="mt-1.5 block md:mt-0 md:inline">{heroHeadingTail}</span>
+                  </>
+                ) : null}
+              </h1>
+              <p className="mb-5 max-w-xl font-serif text-[1rem] font-light italic leading-[1.62] tracking-[0.015em] text-[#EAEAEA]/76 sm:mb-6 sm:text-[1.18rem] sm:leading-[1.7] md:lumen-hero-lead">
+                {t.hero.subheading}
+              </p>
+              <p className="mb-7 max-w-lg font-serif text-[0.98rem] italic leading-[1.58] text-[#C6A15B] sm:text-[1.08rem] md:mb-14 md:lumen-hero-quote">
+                &ldquo;{t.hero.quote}&rdquo;
+              </p>
+              <a
+                href="#partnerek"
+                className="inline-flex items-center gap-3 border border-[#C6A15B]/40 px-6 py-3 text-xs uppercase tracking-[0.2em] transition-all duration-500 ease-out hover:bg-[#C6A15B] hover:text-[#0B0B0B] backdrop-blur-sm sm:px-8 sm:py-4 sm:text-sm"
+              >
+                {t.hero.cta}
+              </a>
+            </FadeIn>
+
+            <FadeIn direction="left" className="relative mt-2 w-full lg:justify-self-stretch">
+              <div className="absolute -left-6 top-10 h-28 w-28 rounded-full border border-[#C6A15B]/16" />
+              <div className="absolute -bottom-8 right-10 h-36 w-36 rounded-full border border-[#C6A15B]/12" />
+              <div className="relative h-[280px] w-full overflow-hidden rounded-[30px] border border-[#C6A15B]/18 bg-black/18 shadow-[0_24px_80px_rgba(0,0,0,0.42)] sm:h-[360px] md:h-[440px] lg:h-[72vh] lg:min-h-[640px]">
+                <div className="absolute inset-0 z-10 bg-gradient-to-t from-[#0B0B0B]/34 via-transparent to-[#3A0F14]/10" />
+                <Image
+                  src="/7.jpg"
+                  alt={t.alt.heroImage}
+                  fill
+                  className="object-cover object-center"
+                  priority
+                  sizes="(max-width: 1024px) 92vw, 52vw"
+                />
+              </div>
+            </FadeIn>
+          </div>
         </div>
 
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center opacity-50">
+        <div className="absolute bottom-10 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center opacity-50 md:flex">
           <span className="uppercase tracking-[0.3em] text-[10px] mb-4 font-sans">
             {t.hero.scroll}
           </span>
@@ -79,7 +93,7 @@ function PageContent() {
 
       <section className="py-32 md:py-48 px-6 text-center relative max-w-4xl mx-auto">
         <FadeIn direction="up">
-          <div className="space-y-12 font-serif text-2xl md:text-3xl leading-relaxed text-[#EAEAEA]/85 font-light">
+          <div className="space-y-12 font-serif lumen-intro-copy text-[#EAEAEA]/85 font-light">
             <p className="whitespace-pre-line italic">{t.intro.line1}</p>
             <div className="section-divider mx-auto" />
             <p className="italic">{t.intro.line2}</p>
@@ -108,7 +122,7 @@ function PageContent() {
             <h2 className="font-serif italic text-4xl md:text-5xl font-light whitespace-pre-line text-glow-gold leading-tight">
               {t.concept.heading}
             </h2>
-            <div className="font-serif italic font-light text-[#EAEAEA]/70 space-y-6 text-[1.75rem] tracking-wide leading-relaxed">
+            <div className="font-serif italic font-light text-[#EAEAEA]/72 space-y-6 lumen-body-copy tracking-wide">
               <p>{t.concept.p1}</p>
               <p>{t.concept.p2}</p>
               <p>{t.concept.p3}</p>
@@ -125,11 +139,11 @@ function PageContent() {
             <h2 className="font-serif italic text-4xl md:text-5xl font-light text-[#EAEAEA] whitespace-pre-line text-glow-gold leading-tight">
               {t.heritage.heading}
             </h2>
-            <div className="font-serif italic font-light text-[#EAEAEA]/70 space-y-6 text-[1.75rem] tracking-wide leading-relaxed">
+            <div className="font-serif italic font-light text-[#EAEAEA]/72 space-y-6 lumen-body-copy tracking-wide">
               <p>{t.heritage.p1}</p>
               <p>{t.heritage.p2}</p>
               <p>{t.heritage.p3}</p>
-              <p className="italic font-serif text-[#C6A15B] text-xl md:text-2xl pt-4">
+              <p className="italic font-serif text-[#C6A15B] lumen-accent-copy pt-4">
                 &ldquo;{t.heritage.quote}&rdquo;
               </p>
             </div>
@@ -156,11 +170,11 @@ function PageContent() {
             <h2 className="font-serif italic text-4xl md:text-5xl font-light whitespace-pre-line text-glow-gold leading-tight">
               {t.experience.heading}
             </h2>
-            <div className="font-serif italic font-light text-[#EAEAEA]/70 text-[1.75rem] tracking-wide space-y-4 leading-relaxed">
+            <div className="font-serif italic font-light text-[#EAEAEA]/72 lumen-body-copy tracking-wide space-y-4">
               <p>{t.experience.p1}</p>
               <p>{t.experience.p2}</p>
             </div>
-            <p className="font-serif text-xl md:text-2xl text-[#C6A15B] italic leading-relaxed">
+            <p className="font-serif text-[#C6A15B] italic lumen-accent-copy">
               {t.experience.accent}
             </p>
           </FadeIn>
@@ -169,7 +183,7 @@ function PageContent() {
               <Image src="/1.jpg" alt={t.alt.detail1} fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="(max-width: 768px) 50vw, 25vw" />
             </FadeIn>
             <FadeIn delay={0.2} direction="up" className="relative aspect-[3/4] overflow-hidden group">
-              <Image src="/2.jpg" alt={t.alt.detail2} fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="(max-width: 768px) 50vw, 25vw" />
+              <Image src="/6.jpg" alt={t.alt.detail2} fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="(max-width: 768px) 50vw, 25vw" />
             </FadeIn>
             <FadeIn delay={0.3} direction="up" className="relative aspect-[3/4] overflow-hidden group">
               <Image src="/3.jpg" alt={t.alt.detail3} fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="(max-width: 768px) 50vw, 25vw" />
@@ -201,39 +215,37 @@ function PageContent() {
             <h2 className="font-serif italic text-4xl md:text-5xl font-light mb-8 max-w-2xl mx-auto leading-tight text-glow-gold whitespace-pre-line">
               {t.exclusivity.heading}
             </h2>
-            <div className="font-serif italic font-light text-[#EAEAEA]/70 text-[1.75rem] tracking-wide max-w-2xl mx-auto space-y-5 leading-relaxed">
+            <div className="font-serif italic font-light text-[#EAEAEA]/72 lumen-body-copy tracking-wide max-w-2xl mx-auto space-y-5">
               <p>{t.exclusivity.p1}</p>
               <p>{t.exclusivity.p2}</p>
-              <p className="text-[#C6A15B] font-normal italic pt-6 font-serif text-xl">{t.exclusivity.accent}</p>
+              <p className="text-[#C6A15B] font-normal italic pt-6 font-serif lumen-accent-copy">{t.exclusivity.accent}</p>
             </div>
           </FadeIn>
         </div>
       </section>
 
       <section className="py-32 px-6 border-b border-[#EAEAEA]/5">
-        <div className="container mx-auto grid lg:grid-cols-2 gap-16 items-center">
-          <FadeIn direction="right" className="space-y-8">
+        <div className="container mx-auto grid lg:grid-cols-[0.72fr_minmax(0,1.18fr)] gap-16 items-start">
+          <FadeIn direction="right" className="space-y-8 lg:pt-4">
             <ScanLine className="w-10 h-10 text-[#EAEAEA] mb-6 opacity-60" />
             <h2 className="font-serif italic text-4xl md:text-5xl font-light text-glow-gold leading-tight whitespace-pre-line">
               {t.authenticity.heading}
             </h2>
-            <div className="font-serif italic font-light text-[#EAEAEA]/70 text-[1.75rem] tracking-wide space-y-6 leading-relaxed">
-              <p>{t.authenticity.p1}</p>
-              <p>{t.authenticity.p2}</p>
-              <p className="text-[#EAEAEA]/90">{t.authenticity.p3}</p>
-            </div>
-            <div className="pt-6">
-              <a href="#partnerek" className="inline-flex items-center gap-3 border border-[#EAEAEA]/40 px-8 py-4 uppercase tracking-[0.2em] text-sm hover:bg-[#EAEAEA] hover:text-[#0B0B0B] transition-all duration-500 ease-out group backdrop-blur-sm">
-                {t.authenticity.cta}
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </a>
-            </div>
           </FadeIn>
-          <FadeIn direction="left" className="relative h-[500px] w-full max-w-sm mx-auto p-1 border border-[#EAEAEA]/10 rounded-xl overflow-hidden backdrop-blur-sm bg-black/20 shadow-2xl flex items-center justify-center">
-            <div className="absolute inset-0 bg-gradient-to-b from-[#3A0F14]/20 to-transparent" />
-            <Image src="/6.jpg" alt={t.alt.authImage} fill className="object-cover opacity-50 mix-blend-screen" sizes="(max-width: 1024px) 100vw, 400px" />
-            <div className="relative z-10 w-48 h-48 border-2 border-[#C6A15B] rounded-lg flex items-center justify-center">
-              <div className="w-full h-0.5 bg-[#C6A15B] animate-[scan_2s_ease-in-out_infinite]" />
+          <FadeIn direction="left" className="relative overflow-hidden rounded-[30px] border border-[#EAEAEA]/10 bg-black/18 px-8 py-10 md:px-12 md:py-14 shadow-[0_22px_64px_rgba(0,0,0,0.32)]">
+            <div className="absolute inset-0 bg-[linear-gradient(140deg,rgba(58,15,20,0.2),transparent_42%,rgba(198,161,91,0.05)_100%)]" />
+            <div className="relative z-10">
+              <div className="font-serif italic font-light text-[#EAEAEA]/72 lumen-body-copy tracking-wide space-y-6">
+                <p>{t.authenticity.p1}</p>
+                <p>{t.authenticity.p2}</p>
+                <p className="text-[#EAEAEA]/92">{t.authenticity.p3}</p>
+              </div>
+              <div className="pt-8">
+                <a href="#partnerek" className="inline-flex items-center gap-3 border border-[#EAEAEA]/40 px-8 py-4 uppercase tracking-[0.2em] text-sm hover:bg-[#EAEAEA] hover:text-[#0B0B0B] transition-all duration-500 ease-out group backdrop-blur-sm">
+                  {t.authenticity.cta}
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
             </div>
           </FadeIn>
         </div>
@@ -246,7 +258,7 @@ function PageContent() {
             <h2 className="font-serif italic text-4xl md:text-5xl font-light mb-8 text-glow-gold leading-tight whitespace-pre-line">
               {t.partners.heading}
             </h2>
-            <div className="font-serif italic font-light text-[#EAEAEA]/70 text-[1.75rem] tracking-wide space-y-6 mb-16 leading-relaxed">
+            <div className="font-serif italic font-light text-[#EAEAEA]/72 lumen-body-copy tracking-wide space-y-6 mb-16">
               <p>{t.partners.p1}</p>
               <p>{t.partners.p2}</p>
               <p>{t.partners.p3}</p>
@@ -269,7 +281,7 @@ function PageContent() {
             <h2 className="font-serif italic text-4xl md:text-5xl font-light text-glow-gold leading-tight">
               {t.nextRelease.heading}
             </h2>
-            <p className="font-serif italic font-light text-[#EAEAEA]/70 text-[1.75rem] tracking-wide leading-relaxed whitespace-pre-line">
+            <p className="font-serif italic font-light text-[#EAEAEA]/72 lumen-body-copy tracking-wide whitespace-pre-line">
               {t.nextRelease.p1}
             </p>
             <div className="pt-6">
@@ -286,7 +298,7 @@ function PageContent() {
           <h2 className="font-serif italic text-4xl md:text-6xl font-light mb-8 text-[#EAEAEA]/90 leading-tight text-glow-gold">
             {t.closing.heading}
           </h2>
-          <p className="font-serif text-xl md:text-2xl text-[#C6A15B] italic">
+          <p className="font-serif text-[#C6A15B] italic lumen-accent-copy">
             {t.closing.sub}
           </p>
         </FadeIn>
@@ -299,8 +311,6 @@ function PageContent() {
           </div>
         </div>
       </footer>
-
-      <style dangerouslySetInnerHTML={{ __html: `@keyframes scan { 0%, 100% { transform: translateY(-70px); opacity: 0; } 10%, 90% { opacity: 1; } 50% { transform: translateY(70px); } }` }} />
     </main>
   );
 }

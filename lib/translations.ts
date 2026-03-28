@@ -106,7 +106,7 @@ export const translations: Record<Locale, SiteTranslations> = {
         "Limitált, sorszámozott gyűjtői borkollekció — azok számára, akik értik a ritkaság valódi jelentését.",
     },
     hero: {
-      heading: "Nem minden\nkerül a világ elé.",
+      heading: "Van olyan, amit nem a világ számára alkottak — csak azoknak, akik felismerik az értéket.",
       subheading:
         "A Lumen egy limitált, sorszámozott gyűjtői borkollekció — azok számára, akik értik a ritkaság valódi jelentését.",
       quote: "A ritkaságnak nem kell elérhetetlennek lennie.",
@@ -151,7 +151,9 @@ export const translations: Record<Locale, SiteTranslations> = {
       heading: "Minden palack egyedi.",
       p1: "Sorszámozott és digitálisan hitelesített.",
       p2: "A QR-kódon keresztül visszakövethető a kollekció eredete, története és helye.",
-      p3: "Egyfajta biztos pont — egy világban, ahol a valódi érték ritkán egyértelmű.",      cta: "Helyi elérhetőség megtekintése",    },
+      p3: "Egyfajta biztos pont — egy világban, ahol a valódi érték ritkán egyértelmű.",
+      cta: "Helyi elérhetőség megtekintése",
+    },
     partners: {
       heading: "A Lumen nem közvetlen értékesítésben jelenik meg.",
       p1: "Minden régióban gondosan kiválasztott partnereken keresztül válik elérhetővé.",
@@ -195,7 +197,7 @@ export const translations: Record<Locale, SiteTranslations> = {
         "A limited, numbered collector's wine collection — for those who understand the true meaning of rarity.",
     },
     hero: {
-      heading: "Not everything\nis meant for the world.",
+      heading: "There are things not made for the world — only for those who recognize value.",
       subheading:
         "Lumen is a limited, numbered collector's wine collection — for those who understand the true meaning of rarity.",
       quote: "Rarity does not have to mean inaccessibility.",
@@ -286,7 +288,7 @@ export const translations: Record<Locale, SiteTranslations> = {
       ogDescription: "限量编号收藏级葡萄酒——献给懂得稀有真正含义的人。",
     },
     hero: {
-      heading: "并非一切\n都为世人所见。",
+      heading: "有些事物并非为世界而造——只为懂得价值的人而生。",
       subheading:
         "Lumen 是一组限量、编号的收藏级葡萄酒——献给懂得稀有真正含义的人。",
       quote: "稀有，不必意味着遥不可及。",
@@ -377,7 +379,7 @@ export const translations: Record<Locale, SiteTranslations> = {
         "คอลเลกชันไวน์สะสมจำนวนจำกัดมีหมายเลข — สำหรับผู้ที่เข้าใจความหมายแท้จริงของความหายาก",
     },
     hero: {
-      heading: "ไม่ใช่ทุกสิ่ง\nที่จะเปิดเผยสู่โลก",
+      heading: "มีบางสิ่งไม่ได้ถูกสร้างมาเพื่อโลกทั้งใบ — แต่เพื่อผู้ที่มองเห็นคุณค่าเท่านั้น",
       subheading:
         "Lumen คือคอลเลกชันไวน์สะสมจำนวนจำกัด มีหมายเลขกำกับ — สำหรับผู้ที่เข้าใจความหมายแท้จริงของความหายาก",
       quote: "ความหายาก ไม่จำเป็นต้องหมายถึงสิ่งที่เข้าถึงไม่ได้",

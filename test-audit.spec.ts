@@ -2,7 +2,7 @@
  * Lumen Landing Page — Full Audit Test
  * Playwright-driven: visual, click, SEO, responsive, language switcher
  */
-import { test, expect, type Page } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 
 const BASE_URL = 'https://www.lumenlimitedseries.com';
 
@@ -309,7 +309,7 @@ test.describe('🔍 Lumen Landing Page Full Audit', () => {
     
     const h1 = await page.locator('h1').first().textContent();
     console.log('🇭🇺 H1 after HU switch:', h1?.trim());
-    expect(h1).toContain('Nem minden');
+    expect(h1).toContain('Van olyan');
   });
 
   test('4.7 Footer links are clickable', async ({ page }) => {

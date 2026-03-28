@@ -12,34 +12,44 @@ interface LanguageContextType
 
 const LanguageContext = createContext<LanguageContextType | undefined>( undefined );
 
+function detectInitialLocale (): Locale
+{
+    if ( typeof window === "undefined" )
+    {
+        return "hu";
+    }
+
+    const stored = localStorage.getItem( "lumen-locale" );
+    if ( stored === "hu" || stored === "en" || stored === "zh" || stored === "th" )
+    {
+        return stored;
+    }
+
+    const browserLang = navigator.language.slice( 0, 2 ).toLowerCase();
+    if ( browserLang === "zh" )
+    {
+        return "zh";
+    }
+
+    if ( browserLang === "th" )
+    {
+        return "th";
+    }
+
+    return "hu";
+}
+
 export function LanguageProvider ( { children }: { children: ReactNode } )
 {
-    const [locale, setLocaleState] = useState<Locale>( "hu" );
+    const [locale, setLocaleState] = useState<Locale>( detectInitialLocale );
 
     useEffect( () =>
     {
-        // Detect browser language on mount
-        const stored = typeof window !== "undefined" ? localStorage.getItem( "lumen-locale" ) : null;
-        if ( stored && ( stored === "hu" || stored === "en" || stored === "zh" || stored === "th" ) )
+        if ( typeof document !== "undefined" )
         {
-            setLocaleState( stored as Locale );
-            document.documentElement.lang = stored;
-        } else
-        {
-            const browserLang = navigator.language.slice( 0, 2 ).toLowerCase();
-            const detected: Locale =
-                browserLang === "hu" ? "hu" :
-                    browserLang === "zh" ? "zh" :
-                        browserLang === "th" ? "th" : "en";
-            // Default to Hungarian for the brand
-            // Only auto-switch for clear matches
-            if ( browserLang === "zh" || browserLang === "th" )
-            {
-                setLocaleState( detected );
-                document.documentElement.lang = detected;
-            }
+            document.documentElement.lang = locale;
         }
-    }, [] );
+    }, [locale] );
 
     const setLocale = useCallback( ( newLocale: Locale ) =>
     {

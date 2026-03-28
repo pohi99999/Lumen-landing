@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useLanguage } from "@/lib/LanguageContext";
 import { X } from "lucide-react";
 
@@ -30,17 +30,15 @@ const cookieTexts = {
 export function CookieConsent ()
 {
   const { locale } = useLanguage();
-  // Start with false to match SSR output — avoids hydration mismatch
-  const [dismissed, setDismissed] = useState( false );
-
-  // Check localStorage AFTER hydration to avoid SSR/client mismatch
-  useEffect( () =>
+  const [dismissed, setDismissed] = useState( () =>
   {
-    if ( localStorage.getItem( "lumen-cookies" ) !== null )
+    if ( typeof window === "undefined" )
     {
-      setDismissed( true );
+      return false;
     }
-  }, [] );
+
+    return localStorage.getItem( "lumen-cookies" ) !== null;
+  } );
 
   if ( dismissed ) return null;
 
@@ -53,21 +51,21 @@ export function CookieConsent ()
   };
 
   return (
-    <div className="fixed bottom-0 inset-x-0 z-50 p-4 animate-in" role="dialog" aria-label="Cookie consent">
-      <div className="max-w-4xl mx-auto bg-[#0B0B0B]/95 backdrop-blur-xl border border-[#C6A15B]/20 rounded-2xl p-6 flex flex-col sm:flex-row items-center gap-4 shadow-2xl shadow-black/50">
-        <p className="text-sm text-[#EAEAEA]/70 flex-1 tracking-wide">
+    <div className="fixed inset-x-0 bottom-0 z-50 animate-in p-3 sm:p-4" role="dialog" aria-label="Cookie consent">
+      <div className="mx-auto flex max-w-4xl flex-col items-center gap-3 rounded-2xl border border-[#C6A15B]/20 bg-[#0B0B0B]/95 p-4 shadow-2xl shadow-black/50 backdrop-blur-xl sm:flex-row sm:gap-4 sm:p-6">
+        <p className="flex-1 text-xs tracking-wide text-[#EAEAEA]/70 sm:text-sm">
           {t.text}
         </p>
-        <div className="flex items-center gap-3 shrink-0">
+        <div className="flex shrink-0 items-center gap-2 sm:gap-3">
           <button
             onClick={() => handleChoice( true )}
-            className="px-6 py-2.5 bg-[#C6A15B] text-[#0B0B0B] text-xs uppercase tracking-[0.15em] font-medium rounded-full hover:bg-[#E5D5A0] transition-colors"
+            className="rounded-full bg-[#C6A15B] px-5 py-2 text-[11px] font-medium uppercase tracking-[0.15em] text-[#0B0B0B] transition-colors hover:bg-[#E5D5A0] sm:px-6 sm:py-2.5 sm:text-xs"
           >
             {t.accept}
           </button>
           <button
             onClick={() => handleChoice( false )}
-            className="px-6 py-2.5 border border-[#EAEAEA]/20 text-[#EAEAEA]/60 text-xs uppercase tracking-[0.15em] rounded-full hover:border-[#EAEAEA]/40 hover:text-[#EAEAEA] transition-colors"
+            className="rounded-full border border-[#EAEAEA]/20 px-5 py-2 text-[11px] uppercase tracking-[0.15em] text-[#EAEAEA]/60 transition-colors hover:border-[#EAEAEA]/40 hover:text-[#EAEAEA] sm:px-6 sm:py-2.5 sm:text-xs"
           >
             {t.decline}
           </button>
