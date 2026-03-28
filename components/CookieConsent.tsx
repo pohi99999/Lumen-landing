@@ -1,8 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useSyncExternalStore } from "react";
 import { useLanguage } from "@/lib/LanguageContext";
 import { X } from "lucide-react";
+
+const COOKIE_STORAGE_KEY = "lumen-cookies";
+const COOKIE_STORAGE_EVENT = "lumen-cookie-consent-changed";
 
 const cookieTexts = {
   hu: {
@@ -30,15 +33,28 @@ const cookieTexts = {
 export function CookieConsent ()
 {
   const { locale } = useLanguage();
-  const [dismissed, setDismissed] = useState( () =>
-  {
-    if ( typeof window === "undefined" )
+  const dismissed = useSyncExternalStore(
+    ( onStoreChange ) =>
     {
-      return false;
-    }
+      if ( typeof window === "undefined" )
+      {
+        return () => undefined;
+      }
 
-    return localStorage.getItem( "lumen-cookies" ) !== null;
-  } );
+      const handleChange = () => onStoreChange();
+
+      window.addEventListener( "storage", handleChange );
+      window.addEventListener( COOKIE_STORAGE_EVENT, handleChange );
+
+      return () =>
+      {
+        window.removeEventListener( "storage", handleChange );
+        window.removeEventListener( COOKIE_STORAGE_EVENT, handleChange );
+      };
+    },
+    () => typeof window !== "undefined" && localStorage.getItem( COOKIE_STORAGE_KEY ) !== null,
+    () => false
+  );
 
   if ( dismissed ) return null;
 
@@ -46,8 +62,8 @@ export function CookieConsent ()
 
   const handleChoice = ( accepted: boolean ) =>
   {
-    localStorage.setItem( "lumen-cookies", accepted ? "accepted" : "declined" );
-    setDismissed( true );
+    localStorage.setItem( COOKIE_STORAGE_KEY, accepted ? "accepted" : "declined" );
+    window.dispatchEvent( new Event( COOKIE_STORAGE_EVENT ) );
   };
 
   return (
