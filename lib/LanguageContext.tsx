@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useState, useCallback, ReactNode, useEffect } from "react";
+import { createContext, useContext, useCallback, ReactNode, useEffect, useSyncExternalStore } from "react";
 import { type Locale, translations, type SiteTranslations } from "./translations";
 
 interface LanguageContextType
@@ -11,8 +11,10 @@ interface LanguageContextType
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>( undefined );
+const localeListeners = new Set<() => void>();
+let currentLocale: Locale = "hu";
 
-function detectInitialLocale (): Locale
+function detectPreferredLocale (): Locale
 {
     if ( typeof window === "undefined" )
     {
@@ -39,9 +41,41 @@ function detectInitialLocale (): Locale
     return "hu";
 }
 
+function getServerLocaleSnapshot (): Locale
+{
+    return "hu";
+}
+
+function getClientLocaleSnapshot (): Locale
+{
+    if ( typeof window === "undefined" )
+    {
+        return currentLocale;
+    }
+
+    const preferredLocale = detectPreferredLocale();
+    if ( currentLocale !== preferredLocale )
+    {
+        currentLocale = preferredLocale;
+    }
+
+    return currentLocale;
+}
+
+function subscribeToLocale ( listener: () => void ): () => void
+{
+    localeListeners.add( listener );
+    return () => localeListeners.delete( listener );
+}
+
+function emitLocaleChange (): void
+{
+    localeListeners.forEach( listener => listener() );
+}
+
 export function LanguageProvider ( { children }: { children: ReactNode } )
 {
-    const [locale, setLocaleState] = useState<Locale>( detectInitialLocale );
+    const locale = useSyncExternalStore( subscribeToLocale, getClientLocaleSnapshot, getServerLocaleSnapshot );
 
     useEffect( () =>
     {
@@ -53,12 +87,13 @@ export function LanguageProvider ( { children }: { children: ReactNode } )
 
     const setLocale = useCallback( ( newLocale: Locale ) =>
     {
-        setLocaleState( newLocale );
+        currentLocale = newLocale;
         if ( typeof window !== "undefined" )
         {
             localStorage.setItem( "lumen-locale", newLocale );
             document.documentElement.lang = newLocale;
         }
+        emitLocaleChange();
     }, [] );
 
     const t = translations[locale];

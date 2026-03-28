@@ -67,7 +67,7 @@ p {
 }
 
 .lumen-hero-lead {
-  font-size: clamp(1.2rem, 1.08rem + 0.68vw, 1.72rem);
+  font-size: clamp(1.16rem, 1.02rem + 0.48vw, 1.38rem);
   line-height: 1.64;
 }
 
@@ -92,7 +92,7 @@ p {
 }
 
 .lumen-accent-copy-lg {
-  font-size: clamp(1.3rem, 1.12rem + 0.5vw, 1.67rem);
+  font-size: clamp(1.43rem, 1.23rem + 0.55vw, 1.84rem);
   line-height: 1.64;
 }
 
@@ -130,23 +130,21 @@ body {
   body {
     background-attachment: scroll;
     background-position: center 18%;
-    background-image:
-      radial-gradient(circle at 50% 10%, rgba(58, 15, 20, 0.26), transparent 42%),
-      linear-gradient(180deg, #0B0B0B 0%, #090909 100%);
   }
 
   body::before {
     background: linear-gradient(
       180deg,
-      rgba(11, 11, 11, 0.92) 0%,
-      rgba(11, 11, 11, 0.86) 34%,
-      rgba(11, 11, 11, 0.92) 100%
+      rgba(11, 11, 11, 0.62) 0%,
+      rgba(58, 15, 20, 0.30) 30%,
+      rgba(11, 11, 11, 0.58) 60%,
+      rgba(11, 11, 11, 0.65) 100%
     );
   }
 
-  /* Hero description: clearly smaller than h1 on mobile */
+  /* Hero description: clearly readable on mobile */
   .lumen-hero-lead {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     line-height: 1.62;
   }
 }

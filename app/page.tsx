@@ -43,7 +43,7 @@ function PageContent() {
               <p className="mb-6 font-serif text-[11px] font-light italic uppercase tracking-[0.3em] text-[#C6A15B]/75 md:mb-8 md:text-sm">
                 Lumen &mdash; {t.exclusivity.label}
               </p>
-              <h1 className="mb-6 max-w-[94%] font-serif text-[clamp(1.72rem,1.45rem+0.55vw,1.82rem)] font-light italic leading-[1.12] text-[#EAEAEA] text-glow-gold sm:mb-7 sm:max-w-[24ch] md:mb-10 md:max-w-[23ch] md:leading-[1.09] lg:max-w-[21ch] lg:leading-[1.08]">
+              <h1 className="mb-6 max-w-[94%] font-serif text-[clamp(1.44rem,1.24rem+0.48vw,1.64rem)] font-light italic leading-[1.14] text-[#EAEAEA] text-glow-gold sm:mb-7 sm:max-w-[24ch] md:mb-10 md:max-w-[23ch] md:leading-[1.11] lg:max-w-[21ch] lg:leading-[1.10]">
                 <span className="block md:inline">{heroHeadingLead}</span>
                 {heroHeadingTail ? (
                   <>
@@ -206,40 +206,39 @@ function PageContent() {
 
       <section className="px-6 py-24 sm:py-28">
         <div className="mx-auto max-w-7xl space-y-6">
-          <FadeIn direction="up" className="grid gap-6 lg:grid-cols-[1.08fr_0.92fr]">
+          <FadeIn direction="up">
             <ImageFrame
               src="/9.jpg"
               alt={t.alt.detail1}
-              frameClassName="aspect-[2/3] bg-[#070708]/80"
+              frameClassName="aspect-[16/10] md:aspect-[2/1] bg-[#070708]/80"
               fit="contain"
-              sizes="(max-width: 1024px) 100vw, 54vw"
+              sizes="100vw"
             />
-
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2">
-              <ImageFrame
-                src="/3.jpg"
-                alt={t.alt.heritageImage}
-                frameClassName="aspect-[3/4]"
-                fit="contain"
-                sizes="(max-width: 1024px) 50vw, 22vw"
-              />
-              <ImageFrame
-                src="/7.jpg"
-                alt={t.alt.detail2}
-                frameClassName="aspect-[3/4]"
-                fit="contain"
-                sizes="(max-width: 1024px) 50vw, 22vw"
-              />
-            </div>
           </FadeIn>
 
-          <FadeIn direction="up" delay={0.12}>
+          <FadeIn direction="up" delay={0.1} className="grid grid-cols-2 gap-6">
+            <ImageFrame
+              src="/3.jpg"
+              alt={t.alt.heritageImage}
+              frameClassName="aspect-[3/4]"
+              sizes="50vw"
+            />
+            <ImageFrame
+              src="/7.jpg"
+              alt={t.alt.detail2}
+              frameClassName="aspect-[3/4]"
+              fit="contain"
+              sizes="50vw"
+            />
+          </FadeIn>
+
+          <FadeIn direction="up" delay={0.2}>
             <ImageFrame
               src="/4.jpg"
               alt={t.alt.detail3}
               frameClassName="aspect-[16/9]"
-              sizes="(max-width: 1024px) 100vw, 100vw"
-              position="center 30%"
+              sizes="100vw"
+              position="center 42%"
             />
           </FadeIn>
         </div>
@@ -263,7 +262,7 @@ function PageContent() {
           <div className="grid grid-cols-2 gap-4 md:grid-cols-2 md:gap-6 opacity-90">
             <FadeIn delay={0.1} direction="up" className="group relative aspect-[3/4] overflow-hidden">
               <Image
-                src="/1.jpg"
+                src="/9.jpg"
                 alt={t.alt.detail1}
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -366,7 +365,7 @@ function PageContent() {
               Lumen Collection
             </span>
             <span className="text-[11px] uppercase tracking-[0.26em] text-[#C6A15B]/55">
-              Limitált sorozat
+              {t.footer.series}
             </span>
           </div>
 
@@ -454,20 +453,19 @@ function ImageFrame({
 
 function DecorativeCube({ className = "" }: { className?: string }) {
   return (
-    <div
-      className={`relative overflow-hidden rounded-[28px] border border-[#C6A15B]/28 bg-[linear-gradient(145deg,rgba(11,11,11,0.96),rgba(58,15,20,0.78))] shadow-[0_24px_60px_rgba(0,0,0,0.34)] ${className}`}
-    >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(229,213,160,0.12),transparent_46%),linear-gradient(135deg,transparent,rgba(198,161,91,0.08),transparent_72%)]" />
-      <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,0.08)_25%,transparent_25%,transparent_50%,rgba(255,255,255,0.08)_50%,rgba(255,255,255,0.08)_75%,transparent_75%,transparent)] bg-[length:14px_14px] opacity-15 mix-blend-screen" />
-      <div className="absolute inset-0 p-5 sm:p-6">
-        <div className="relative h-full w-full">
+    <div className={`relative ${className}`}>
+      {/* Subtle outer gold glow */}
+      <div className="absolute -inset-[3px] rounded-sm bg-gradient-to-br from-[#C6A15B]/30 via-[#E5D5A0]/15 to-[#C6A15B]/30 blur-[6px]" />
+      {/* Thin double-line gold border frame */}
+      <div className="relative h-full w-full rounded-sm border border-[#C6A15B]/50 p-[3px]">
+        <div className="relative h-full w-full overflow-hidden rounded-[2px] border border-[#C6A15B]/30">
           <Image
             src="/10.jpg"
             alt="Lumen díszes L jel"
             fill
             priority={false}
             sizes="(max-width: 768px) 40vw, 180px"
-            className="object-contain"
+            className="object-cover"
           />
         </div>
       </div>

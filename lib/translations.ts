@@ -79,6 +79,7 @@ export interface SiteTranslations {
     sub: string;
   };
   footer: {
+    series: string;
     imprint: string;
     privacy: string;
     contact: string;
@@ -171,6 +172,7 @@ export const translations: Record<Locale, SiteTranslations> = {
       sub: "És talán éppen ezért válik igazán értékessé.",
     },
     footer: {
+      series: "Limitált sorozat",
       imprint: "Impresszum",
       privacy: "Adatkezelés",
       contact: "Kapcsolat",
@@ -263,6 +265,7 @@ export const translations: Record<Locale, SiteTranslations> = {
       sub: "And perhaps that is exactly what makes it truly valuable.",
     },
     footer: {
+      series: "Limited series",
       imprint: "Imprint",
       privacy: "Privacy",
       contact: "Contact",
@@ -353,6 +356,7 @@ export const translations: Record<Locale, SiteTranslations> = {
       sub: "也许，正因如此，才真正珍贵。",
     },
     footer: {
+      series: "限量系列",
       imprint: "法律声明",
       privacy: "隐私政策",
       contact: "联系我们",
@@ -445,6 +449,7 @@ export const translations: Record<Locale, SiteTranslations> = {
       sub: "และบางที นั่นคือสิ่งที่ทำให้มันมีค่าอย่างแท้จริง",
     },
     footer: {
+      series: "ซีรีส์ลิมิเต็ด",
       imprint: "ข้อกฎหมาย",
       privacy: "นโยบายความเป็นส่วนตัว",
       contact: "ติดต่อเรา",
