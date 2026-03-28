@@ -67,8 +67,8 @@ p {
 }
 
 .lumen-hero-lead {
-  font-size: clamp(1.2rem, 1.04rem + 0.55vw, 1.5rem);
-  line-height: 1.72;
+  font-size: clamp(1.2rem, 1.08rem + 0.68vw, 1.72rem);
+  line-height: 1.64;
 }
 
 .lumen-hero-quote {
@@ -88,6 +88,11 @@ p {
 
 .lumen-accent-copy {
   font-size: clamp(1.18rem, 1.02rem + 0.45vw, 1.52rem);
+  line-height: 1.64;
+}
+
+.lumen-accent-copy-lg {
+  font-size: clamp(1.3rem, 1.12rem + 0.5vw, 1.67rem);
   line-height: 1.64;
 }
 
@@ -119,6 +124,31 @@ p {
 
 body {
   animation: silk-shift 30s ease-in-out infinite;
+}
+
+@media (max-width: 767px) {
+  body {
+    background-attachment: scroll;
+    background-position: center 18%;
+    background-image:
+      radial-gradient(circle at 50% 10%, rgba(58, 15, 20, 0.26), transparent 42%),
+      linear-gradient(180deg, #0B0B0B 0%, #090909 100%);
+  }
+
+  body::before {
+    background: linear-gradient(
+      180deg,
+      rgba(11, 11, 11, 0.92) 0%,
+      rgba(11, 11, 11, 0.86) 34%,
+      rgba(11, 11, 11, 0.92) 100%
+    );
+  }
+
+  /* Hero description: clearly smaller than h1 on mobile */
+  .lumen-hero-lead {
+    font-size: 1.05rem;
+    line-height: 1.62;
+  }
 }
 
 /* Custom scrollbar for a premium feel */
