@@ -7,7 +7,7 @@ import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { BackToTop } from "@/components/BackToTop";
 import { CookieConsent } from "@/components/CookieConsent";
 import { useLanguage } from "@/lib/LanguageContext";
-import { ArrowDown, ArrowRight, MapPin, ScanLine, Wine } from "lucide-react";
+import { ArrowDown, ScanLine, Wine } from "lucide-react";
 
 export default function Home() {
   return (
@@ -43,7 +43,7 @@ function PageContent() {
               <p className="mb-6 font-serif text-[11px] font-light italic uppercase tracking-[0.3em] text-[#C6A15B]/75 md:mb-8 md:text-sm">
                 Lumen &mdash; {t.exclusivity.label}
               </p>
-              <h1 className="mb-6 max-w-[94%] font-serif text-[clamp(1.44rem,1.24rem+0.48vw,1.64rem)] font-light italic leading-[1.14] text-[#EAEAEA] text-glow-gold sm:mb-7 sm:max-w-[24ch] md:mb-10 md:max-w-[23ch] md:leading-[1.11] lg:max-w-[21ch] lg:leading-[1.10]">
+              <h1 className="mb-6 max-w-[94%] font-serif text-[clamp(1.58rem,1.36rem+0.53vw,1.80rem)] font-light italic leading-[1.14] text-[#EAEAEA] text-glow-gold sm:mb-7 sm:max-w-[24ch] md:mb-10 md:max-w-[23ch] md:leading-[1.11] lg:max-w-[21ch] lg:leading-[1.10]">
                 <span className="block md:inline">{heroHeadingLead}</span>
                 {heroHeadingTail ? (
                   <>
@@ -55,11 +55,11 @@ function PageContent() {
               <p className="mb-5 max-w-[32rem] font-serif text-[#EAEAEA]/78 lumen-hero-lead sm:mb-6 sm:max-w-[34rem] md:max-w-xl">
                 {t.hero.subheading}
               </p>
-              <p className="mb-7 max-w-lg font-serif text-[1rem] italic leading-[1.58] text-[#C6A15B] sm:text-[1.08rem] md:mb-14 md:text-[1.16rem] md:leading-[1.68]">
+              <p className="mb-7 max-w-lg font-serif text-[1.10rem] italic leading-[1.58] text-[#C6A15B] sm:text-[1.19rem] md:mb-14 md:text-[1.28rem] md:leading-[1.68]">
                 &ldquo;{t.hero.quote}&rdquo;
               </p>
               <a
-                href="#partnerek"
+                href="#"
                 className="inline-flex items-center gap-3 border border-[#C6A15B]/40 px-6 py-3 text-xs uppercase tracking-[0.2em] transition-all duration-500 ease-out hover:bg-[#C6A15B] hover:text-[#0B0B0B] backdrop-blur-sm sm:px-8 sm:py-4 sm:text-sm"
               >
                 {t.hero.cta}
@@ -181,7 +181,7 @@ function PageContent() {
             className="order-2 relative mx-auto w-full max-w-2xl lg:order-1 lg:max-w-none"
           >
             <ImageFrame
-              src="/6.jpg"
+              src="/5.jpg"
               alt={t.alt.authImage}
               frameClassName="aspect-[4/3] lg:aspect-[16/10]"
               sizes="(max-width: 1024px) 100vw, 48vw"
@@ -206,17 +206,7 @@ function PageContent() {
 
       <section className="px-6 py-24 sm:py-28">
         <div className="mx-auto max-w-7xl space-y-6">
-          <FadeIn direction="up">
-            <ImageFrame
-              src="/9.jpg"
-              alt={t.alt.detail1}
-              frameClassName="aspect-[16/10] md:aspect-[2/1] bg-[#070708]/80"
-              fit="contain"
-              sizes="100vw"
-            />
-          </FadeIn>
-
-          <FadeIn direction="up" delay={0.1} className="grid grid-cols-2 gap-6">
+          <FadeIn direction="up" className="grid grid-cols-2 gap-6">
             <ImageFrame
               src="/3.jpg"
               alt={t.alt.heritageImage}
@@ -224,21 +214,27 @@ function PageContent() {
               sizes="50vw"
             />
             <ImageFrame
-              src="/7.jpg"
-              alt={t.alt.detail2}
+              src="/9.jpg"
+              alt={t.alt.detail1}
               frameClassName="aspect-[3/4]"
               fit="contain"
               sizes="50vw"
             />
           </FadeIn>
 
-          <FadeIn direction="up" delay={0.2}>
+          <FadeIn direction="up" delay={0.1} className="grid grid-cols-2 gap-6">
             <ImageFrame
-              src="/4.jpg"
-              alt={t.alt.detail3}
-              frameClassName="aspect-[16/9]"
-              sizes="100vw"
-              position="center 42%"
+              src="/szerzetes-uj.jpg"
+              alt="Szerzetes borral, pohárral"
+              frameClassName="aspect-[3/4]"
+              sizes="50vw"
+              position="center top"
+            />
+            <ImageFrame
+              src="/szolofurt-uj.jpg"
+              alt="Szőlőfürt közelkép"
+              frameClassName="aspect-[3/4]"
+              sizes="50vw"
             />
           </FadeIn>
         </div>
@@ -257,65 +253,6 @@ function PageContent() {
             <p className="font-serif lumen-accent-copy italic text-[#C6A15B]">
               {t.exclusivity.accent}
             </p>
-          </FadeIn>
-
-          <div className="grid grid-cols-2 gap-4 md:grid-cols-2 md:gap-6 opacity-90">
-            <FadeIn delay={0.1} direction="up" className="group relative aspect-[3/4] overflow-hidden">
-              <Image
-                src="/9.jpg"
-                alt={t.alt.detail1}
-                fill
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
-                sizes="(max-width: 768px) 50vw, 25vw"
-              />
-            </FadeIn>
-            <FadeIn delay={0.2} direction="up" className="group relative aspect-[3/4] overflow-hidden">
-              <Image
-                src="/6.jpg"
-                alt={t.alt.authImage}
-                fill
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
-                sizes="(max-width: 768px) 50vw, 25vw"
-              />
-            </FadeIn>
-            <FadeIn delay={0.3} direction="up" className="group relative aspect-[3/4] overflow-hidden">
-              <Image
-                src="/3.jpg"
-                alt={t.alt.heritageImage}
-                fill
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
-                sizes="(max-width: 768px) 50vw, 25vw"
-              />
-            </FadeIn>
-            <FadeIn delay={0.4} direction="up" className="group relative aspect-[3/4] overflow-hidden">
-              <Image
-                src="/4.jpg"
-                alt={t.alt.detail3}
-                fill
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
-                sizes="(max-width: 768px) 50vw, 25vw"
-              />
-            </FadeIn>
-          </div>
-        </div>
-      </section>
-
-      <section id="partnerek" className="py-32 px-6">
-        <div className="container mx-auto max-w-4xl text-center space-y-12">
-          <FadeIn direction="up">
-            <MapPin className="mx-auto mb-8 h-10 w-10 text-[#C6A15B]" />
-            <h2 className="font-serif text-4xl font-light italic leading-tight text-glow-gold md:text-5xl">
-              {t.partners.heading}
-            </h2>
-            <div className="mb-16 space-y-6 font-serif lumen-body-copy font-light italic tracking-wide text-[#EAEAEA]/72">
-              <p>{t.partners.p1}</p>
-              <p>{t.partners.p2}</p>
-              <p>{t.partners.p3}</p>
-            </div>
-            <button className="inline-flex items-center gap-3 border border-[#EAEAEA]/40 px-8 py-4 text-sm uppercase tracking-[0.2em] transition-all duration-500 ease-out group backdrop-blur-sm hover:bg-[#EAEAEA] hover:text-[#0B0B0B]">
-              {t.partners.cta}
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </button>
           </FadeIn>
         </div>
       </section>
@@ -460,12 +397,12 @@ function DecorativeCube({ className = "" }: { className?: string }) {
       <div className="relative h-full w-full rounded-sm border border-[#C6A15B]/50 p-[3px]">
         <div className="relative h-full w-full overflow-hidden rounded-[2px] border border-[#C6A15B]/30">
           <Image
-            src="/10.jpg"
+            src="/l-betu.jpg"
             alt="Lumen díszes L jel"
             fill
             priority={false}
             sizes="(max-width: 768px) 40vw, 180px"
-            className="object-cover"
+            className="object-cover mix-blend-screen"
           />
         </div>
       </div>

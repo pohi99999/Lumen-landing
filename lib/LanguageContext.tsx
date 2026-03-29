@@ -12,13 +12,13 @@ interface LanguageContextType
 
 const LanguageContext = createContext<LanguageContextType | undefined>( undefined );
 const localeListeners = new Set<() => void>();
-let currentLocale: Locale = "hu";
+let currentLocale: Locale = "en";
 
 function detectPreferredLocale (): Locale
 {
     if ( typeof window === "undefined" )
     {
-        return "hu";
+        return "en";
     }
 
     const stored = localStorage.getItem( "lumen-locale" );
@@ -38,12 +38,12 @@ function detectPreferredLocale (): Locale
         return "th";
     }
 
-    return "hu";
+    return "en";
 }
 
 function getServerLocaleSnapshot (): Locale
 {
-    return "hu";
+    return "en";
 }
 
 function getClientLocaleSnapshot (): Locale

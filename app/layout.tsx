@@ -68,7 +68,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "hu_HU",
+    locale: "en_US",
     alternateLocale: ["en_US", "zh_CN", "th_TH"],
     url: "https://www.lumenlimitedseries.com",
     siteName: "Lumen Collection",
@@ -195,7 +195,7 @@ export default function RootLayout ( {
 }> )
 {
   return (
-    <html lang="hu" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth">
       <head>
         <script
           type="application/ld+json"
