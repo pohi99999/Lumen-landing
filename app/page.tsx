@@ -76,7 +76,6 @@ function PageContent() {
               sizes="(max-width: 1024px) 92vw, 52vw"
               priority
               className="mx-auto max-w-[19rem] sm:max-w-[23rem] md:max-w-none"
-              imageClassName="max-md:object-contain"
               overlay={<div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0B]/36 via-transparent to-[#3A0F14]/12" />}
             />
             </FadeIn>
@@ -219,7 +218,6 @@ function PageContent() {
               src="/9.jpg"
               alt={t.alt.detail1}
               frameClassName="aspect-[3/4]"
-              fit="contain"
               sizes="50vw"
             />
           </FadeIn>
