@@ -181,7 +181,7 @@ function PageContent() {
             className="order-2 relative mx-auto w-full max-w-xl lg:order-1 lg:max-w-none"
           >
             <ImageFrame
-              src="/lumen-qr.svg"
+              src="/lumen-qr-new.jpg"
               alt={t.alt.authImage}
               frameClassName="aspect-square"
               sizes="(max-width: 1024px) 100vw, 48vw"
