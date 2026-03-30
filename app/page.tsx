@@ -178,15 +178,17 @@ function PageContent() {
         <div className="mx-auto grid max-w-7xl items-center gap-16 lg:grid-cols-[0.92fr_1.08fr] lg:gap-24">
           <FadeIn
             direction="left"
-            className="order-2 relative mx-auto w-full max-w-xl lg:order-1 lg:max-w-none"
+            className="order-2 relative mx-auto w-full lg:order-1 lg:max-w-none"
           >
-            <ImageFrame
-              src="/lumen-qr-new.jpg"
-              alt={t.alt.authImage}
-              frameClassName="aspect-square"
-              sizes="(max-width: 1024px) 100vw, 48vw"
-              fit="contain"
-            />
+            <div className="relative w-full overflow-hidden rounded-2xl aspect-[3/4] shadow-[0_32px_90px_rgba(0,0,0,0.55)]">
+              <Image
+                src="/lumen-qr-new.jpg"
+                alt={t.alt.authImage}
+                fill
+                sizes="(max-width: 1024px) 100vw, 48vw"
+                className="object-cover object-center"
+              />
+            </div>
           </FadeIn>
 
           <FadeIn direction="right" className="order-1 space-y-8 text-right lg:order-2 lg:pl-8">
