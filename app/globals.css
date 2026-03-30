@@ -20,17 +20,26 @@
 /* Global background: luxurious red silk texture */
 html {
   overflow-x: hidden; /* prevent framer-motion x-offset animations from causing horizontal scroll */
+  background-color: var(--background); /* fallback if image fails to load */
 }
 
 body {
   overflow-x: hidden; /* prevent mobile horizontal scroll from animations (FadeIn x-offset) */
-  background-color: var(--background);
+  background-color: transparent; /* must be transparent so body::after (z-index:-1) stays visible above canvas */
   color: var(--foreground);
+}
+
+/* Fixed background image — always viewport-sized, no upscaling on mobile */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
   background-image: url('/hatter.jpg');
   background-size: cover;
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  pointer-events: none;
 }
 
 /* Background overlay for text readability */
@@ -122,27 +131,23 @@ p {
   50% { background-position: center 48%; }
 }
 
-body {
+body::after {
   animation: silk-shift 30s ease-in-out infinite;
 }
 
 @media (max-width: 767px) {
-  body {
-    background-attachment: scroll;
-    background-position: center center;
-    animation: none;
+  body::after {
+    animation: none; /* no animation on mobile — performance & battery */
   }
 
   body::before {
-    position: absolute;
-    inset: 0;
-    min-height: 100%;
+    /* Lighter overlay on mobile so silk texture stays visible */
     background: linear-gradient(
       180deg,
-      rgba(11, 11, 11, 0.75) 0%,
-      rgba(11, 11, 11, 0.65) 35%,
-      rgba(11, 11, 11, 0.72) 65%,
-      rgba(11, 11, 11, 0.80) 100%
+      rgba(11, 11, 11, 0.45) 0%,
+      rgba(11, 11, 11, 0.38) 35%,
+      rgba(11, 11, 11, 0.42) 65%,
+      rgba(11, 11, 11, 0.48) 100%
     );
   }
 

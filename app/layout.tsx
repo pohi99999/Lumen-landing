@@ -221,7 +221,7 @@ export default function RootLayout ( {
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body
-        className={`${ inter.variable } ${ cormorant.variable } antialiased bg-[#0B0B0B] text-[#EAEAEA] font-sans selection:bg-[#3A0F14] selection:text-white`}
+        className={`${ inter.variable } ${ cormorant.variable } antialiased text-[#EAEAEA] font-sans selection:bg-[#3A0F14] selection:text-white`}
       >
         <a
           href="#main-content"

@@ -258,7 +258,7 @@ function PageContent() {
       </section>
 
       <section className="relative overflow-hidden px-6 py-24">
-        <div className="absolute inset-0 bg-black/15 backdrop-blur-[1px]" />
+        <div className="absolute inset-0 bg-black/15" />
         <div className="container mx-auto grid items-center gap-12 relative z-10 lg:grid-cols-2">
           <FadeIn direction="right" className="relative aspect-video w-full overflow-hidden group lg:aspect-[16/10]">
             <Image
@@ -354,7 +354,7 @@ function ImageFrame({
 }: ImageFrameProps) {
   return (
     <div
-      className={`relative overflow-hidden rounded-[34px] border border-[#C6A15B]/18 bg-black/30 shadow-[0_28px_80px_rgba(0,0,0,0.35)] ${frameClassName} ${className}`}
+      className={`relative overflow-hidden rounded-[34px] border border-[#C6A15B]/18 bg-black/8 shadow-[0_28px_80px_rgba(0,0,0,0.35)] ${frameClassName} ${className}`}
     >
       {fit === "contain" ? (
         <div className="absolute inset-0 p-4 sm:p-5">
