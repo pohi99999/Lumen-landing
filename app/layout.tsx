@@ -151,7 +151,7 @@ const organizationLd = {
   "@type": "Organization",
   name: "Lumen Collection",
   url: "https://www.lumenlimitedseries.com",
-  logo: "https://www.lumenlimitedseries.com/og-image.jpg",
+  logo: "https://www.lumenlimitedseries.com/l-betu.png",
   description:
     "Prémium, limitált gyűjtői borkollekció Magyarországról.",
   sameAs: [],

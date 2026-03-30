@@ -128,9 +128,9 @@ export const translations: Record<Locale, SiteTranslations> = {
     },
     heritage: {
       heading: "A Lumen gyökerei\nmélyre nyúlnak.",
-      p1: "Magyarország borászata évszázadok óta formálódik - föld, klíma, évszázados emberi tudás, és hagyományok, tapasztalat finom egyensúlyából.",
-      p2: "Ez a tudás nem látványos. Nem hangos. Hanem rétegről rétegre épül.",
-      p3: "A Lumen ezt az örökséget emeli ki, és ad neki egy új, kortárs formát.",
+      p1: "Magyarország borászata évszázadok óta formálódik – a föld, a klíma és a generációkon át öröklődő tudás finom egyensúlyából.",
+      p2: "Ez a tudás nem látványos, nem hangos – rétegről rétegre épül.",
+      p3: "A Lumen ezt az örökséget emeli ki, és ad neki egy kortárs, letisztult formát.\nEgy gondosan válogatott Pinot Gris, amely rövid ideig tölgyfahordóban érlelődik, hogy finom mélységet és eleganciát nyerjen, miközben megőrzi természetes frissességét.",
       quote: "Egy palack, amely nemcsak megőriz, hanem tovább is mesél.",
     },
     experience: {
@@ -184,7 +184,7 @@ export const translations: Record<Locale, SiteTranslations> = {
       detail1: "Lumen párt ábrázoló kép",
       detail2: "Nyitott Lumen doboz belső oldallal",
       detail3: "Szerzetes borral, pohárral és szőlőfürttel",
-      authImage: "Palack, QR-kód és mobiltelefon",
+      authImage: "QR-kódos hitelesítés",
       nextReleaseImage: "A következő Lumen kiadás előzetese",
     },
   },
@@ -220,9 +220,9 @@ export const translations: Record<Locale, SiteTranslations> = {
     },
     heritage: {
       heading: "The roots of Lumen\nrun deep.",
-      p1: "Hungarian winemaking has evolved over centuries — through the delicate balance of land, climate, and human knowledge.",
-      p2: "This knowledge is not loud. Not obvious. It is built layer by layer.",
-      p3: "Lumen brings this heritage forward in a refined, contemporary form.",
+      p1: "Hungarian winemaking has been shaped for centuries — by the delicate balance of the land, the climate, and knowledge passed down through generations.",
+      p2: "That knowledge is not visual or loud — it builds layer by layer.",
+      p3: "Lumen lifts this heritage into a contemporary, clean form.\nA carefully selected Pinot Gris, briefly matured in oak, gains subtle depth and elegance while keeping its natural freshness.",
       quote: "A bottle that not only preserves, but continues to tell its story.",
     },
     experience: {
@@ -312,10 +312,10 @@ export const translations: Record<Locale, SiteTranslations> = {
     },
     heritage: {
       heading: "Lumen 的根源，\n深植于历史。",
-      p1: "匈牙利的酿酒传统历经数百年沉淀，源于土地、气候与人类智慧的平衡。",
-      p2: "这种价值不张扬，不喧哗。它一层一层，缓慢构建。",
-      p3: "Lumen，将这份传承以当代形式呈现。",
-      quote: "一瓶酒，不仅是保存，更是讲述。",
+      p1: "匈牙利葡萄酒业数百年来不断形成——源自土地、气候与代代相传的知识之间的微妙平衡。",
+      p2: "这种知识并不张扬，也不喧哗——而是层层累积而成。",
+      p3: "Lumen 将这份传承提炼为一种当代而克制的表达。\n一款精心挑选的 Pinot Gris，在橡木桶中短暂陈酿，获得细腻的深度与优雅，同时保留其天然的新鲜感。",
+      quote: "一瓶酒，不只是保存，也会继续讲述。",
     },
     experience: {
       heading: "Lumen，\n不仅是一件物品。",
@@ -404,10 +404,10 @@ export const translations: Record<Locale, SiteTranslations> = {
     },
     heritage: {
       heading: "รากเหง้าของ Lumen\nฝังลึกในประวัติศาสตร์",
-      p1: "การทำไวน์ของฮังการีวิวัฒนาการมาหลายศตวรรษ — ผ่านสมดุลอันละเอียดอ่อนของผืนดิน สภาพอากาศ และภูมิปัญญา",
-      p2: "ความรู้นี้ไม่โอ้อวด ไม่โฉ่งฉ่าง มันถูกสร้างขึ้นทีละชั้น",
-      p3: "Lumen นำมรดกนี้มาในรูปแบบร่วมสมัยที่ประณีต",
-      quote: "ขวดไวน์ที่ไม่เพียงเก็บรักษา แต่ยังเล่าเรื่องต่อไป",
+      p1: "การทำไวน์ของฮังการีก่อร่างขึ้นมาหลายศตวรรษ — จากสมดุลอันละเอียดอ่อนระหว่างผืนดิน สภาพอากาศ และความรู้ที่สืบทอดกันมาจากรุ่นสู่รุ่น",
+      p2: "ความรู้นี้ไม่ฉูดฉาด ไม่ส่งเสียงดัง — แต่มันก่อตัวขึ้นทีละชั้น",
+      p3: "Lumen นำมรดกนี้มาถ่ายทอดในรูปแบบร่วมสมัยที่เรียบคม\nไวน์ Pinot Gris ที่คัดสรรมาอย่างพิถีพิถัน บ่มในถังไม้โอ๊กช่วงเวลาสั้น ๆ เพื่อให้ได้มิติและความสง่างามที่ละเมียดละไม ขณะยังคงความสดตามธรรมชาติไว้",
+      quote: "หนึ่งขวดที่ไม่เพียงเก็บรักษา แต่ยังเล่าเรื่องต่อไป",
     },
     experience: {
       heading: "Lumen\nไม่ใช่แค่สิ่งของ",

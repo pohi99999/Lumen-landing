@@ -178,13 +178,14 @@ function PageContent() {
         <div className="mx-auto grid max-w-7xl items-center gap-16 lg:grid-cols-[0.92fr_1.08fr] lg:gap-24">
           <FadeIn
             direction="left"
-            className="order-2 relative mx-auto w-full max-w-2xl lg:order-1 lg:max-w-none"
+            className="order-2 relative mx-auto w-full max-w-xl lg:order-1 lg:max-w-none"
           >
             <ImageFrame
-              src="/5.jpg"
+              src="/lumen-qr.svg"
               alt={t.alt.authImage}
-              frameClassName="aspect-[4/3] lg:aspect-[16/10]"
+              frameClassName="aspect-square"
               sizes="(max-width: 1024px) 100vw, 48vw"
+              fit="contain"
             />
           </FadeIn>
 
@@ -391,21 +392,15 @@ function ImageFrame({
 function DecorativeCube({ className = "" }: { className?: string }) {
   return (
     <div className={`relative ${className}`}>
-      {/* Subtle outer gold glow */}
-      <div className="absolute -inset-[3px] rounded-sm bg-gradient-to-br from-[#C6A15B]/30 via-[#E5D5A0]/15 to-[#C6A15B]/30 blur-[6px]" />
-      {/* Thin double-line gold border frame */}
-      <div className="relative h-full w-full rounded-sm border border-[#C6A15B]/50 p-[3px]">
-        <div className="relative h-full w-full overflow-hidden rounded-[2px] border border-[#C6A15B]/30">
-          <Image
-            src="/l-betu.jpg"
-            alt="Lumen díszes L jel"
-            fill
-            priority={false}
-            sizes="(max-width: 768px) 40vw, 180px"
-            className="object-cover mix-blend-screen"
-          />
-        </div>
-      </div>
+      <div className="absolute -inset-[7px] rounded-[2px] bg-[radial-gradient(circle_at_35%_30%,rgba(198,161,91,0.34),transparent_42%),radial-gradient(circle_at_70%_78%,rgba(165,121,44,0.2),transparent_38%),linear-gradient(140deg,rgba(198,161,91,0.18),rgba(11,11,11,0.02))] blur-2xl" />
+      <Image
+        src="/l-betu.png"
+        alt="Lumen díszes L jel"
+        fill
+        priority={false}
+        sizes="(max-width: 768px) 40vw, 180px"
+        className="object-contain drop-shadow-[0_18px_35px_rgba(0,0,0,0.42)]"
+      />
     </div>
   );
 }
