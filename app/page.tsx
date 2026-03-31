@@ -118,7 +118,6 @@ function PageContent() {
           >
             <ImageFrame
               src="/2.jpg"
-              mobileSrc="/images/levett-helyett-1-mobile.jpg"
               alt={t.alt.conceptImage}
               frameClassName="aspect-[3/4] lg:aspect-[4/5]"
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -167,7 +166,6 @@ function PageContent() {
           >
             <ImageFrame
               src="/3.jpg"
-              mobileSrc="/images/levett-helyett-2-mobile.jpg"
               alt={t.alt.heritageImage}
               frameClassName="aspect-[4/3] lg:aspect-square"
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -191,7 +189,7 @@ function PageContent() {
               className="w-full h-auto rounded-2xl shadow-[0_32px_90px_rgba(0,0,0,0.55)] hidden md:block"
             />
             <Image
-              src="/images/levett-helyett-1-mobile.jpg"
+              src="/lumen-qr-new.jpg"
               alt={t.alt.authImage}
               width={900}
               height={1200}
@@ -221,14 +219,14 @@ function PageContent() {
           <FadeIn direction="up" className="grid grid-cols-2 gap-6">
             <ImageFrame
               src="/3.jpg"
-              mobileSrc="/images/ezt-lennenni2-mobile.jpg"
+              mobileSrc="/szerzetes-uj.jpg"
               alt={t.alt.heritageImage}
               frameClassName="aspect-[3/4]"
               sizes="50vw"
             />
             <ImageFrame
               src="/9.jpg"
-              mobileSrc="/images/ezt-lennenni-mobile.jpg"
+              mobileSrc="/6.jpg"
               alt={t.alt.detail1}
               frameClassName="aspect-[3/4]"
               sizes="50vw"
@@ -238,7 +236,7 @@ function PageContent() {
           <FadeIn direction="up" delay={0.1} className="grid grid-cols-2 gap-6">
             <ImageFrame
               src="/szerzetes-uj.jpg"
-              mobileSrc="/images/levett-helyett-1-mobile.jpg"
+              mobileSrc="/szerzetes-uj.jpg"
               alt="Szerzetes borral, pohárral"
               frameClassName="aspect-[3/4]"
               sizes="50vw"
@@ -246,7 +244,7 @@ function PageContent() {
             />
             <ImageFrame
               src="/szolofurt-uj.jpg"
-              mobileSrc="/images/levett-helyett-2-mobile.jpg"
+              mobileSrc="/szolofurt-uj.jpg"
               alt="Szőlőfürt közelkép"
               frameClassName="aspect-[3/4]"
               sizes="50vw"
