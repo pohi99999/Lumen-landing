@@ -118,6 +118,7 @@ function PageContent() {
           >
             <ImageFrame
               src="/2.jpg"
+              mobileSrc="/images/levett-helyett-1-mobile.jpg"
               alt={t.alt.conceptImage}
               frameClassName="aspect-[3/4] lg:aspect-[4/5]"
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -166,6 +167,7 @@ function PageContent() {
           >
             <ImageFrame
               src="/3.jpg"
+              mobileSrc="/images/levett-helyett-2-mobile.jpg"
               alt={t.alt.heritageImage}
               frameClassName="aspect-[4/3] lg:aspect-square"
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -186,7 +188,15 @@ function PageContent() {
               width={1536}
               height={1024}
               sizes="(max-width: 1024px) 92vw, 48vw"
-              className="w-full h-auto rounded-2xl shadow-[0_32px_90px_rgba(0,0,0,0.55)]"
+              className="w-full h-auto rounded-2xl shadow-[0_32px_90px_rgba(0,0,0,0.55)] hidden md:block"
+            />
+            <Image
+              src="/images/levett-helyett-1-mobile.jpg"
+              alt={t.alt.authImage}
+              width={900}
+              height={1200}
+              sizes="92vw"
+              className="w-full h-auto rounded-2xl shadow-[0_32px_90px_rgba(0,0,0,0.55)] md:hidden"
             />
           </FadeIn>
 
