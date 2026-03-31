@@ -244,7 +244,7 @@ function PageContent() {
             />
             <ImageFrame
               src="/szolofurt-uj.jpg"
-              mobileSrc="/szolofurt-uj.jpg"
+              mobileSrc="/szerzetes-helyett.avif"
               alt="Szőlőfürt közelkép"
               frameClassName="aspect-[3/4]"
               sizes="50vw"
