@@ -101,7 +101,7 @@ export const translations: Record<Locale, SiteTranslations> = {
     meta: {
       title: "Lumen — Limitált Gyűjtői Borkollekció | Sorszámozott Kiadások",
       description:
-        "A Lumen egy limitált, sorszámozott gyűjtői borkollekció Magyarországról. Minden kiadás egyedi, digitálisan hitelesített. Maximum 1500 palack kiadásonként.",
+        "A Lumen egy limitált, sorszámozott gyűjtői borkollekció Magyarországról. Minden kiadás egyedi, digitálisan hitelesített. Maximum 1000 palack kiadásonként.",
       ogTitle: "Lumen — A ritkaság valódi jelentése",
       ogDescription:
         "Limitált, sorszámozott gyűjtői borkollekció — azok számára, akik értik a ritkaság valódi jelentését.",
@@ -141,11 +141,11 @@ export const translations: Record<Locale, SiteTranslations> = {
     },
     exclusivity: {
       label: "Korlátozott elérés",
-      number: "1500",
+      number: "1000",
       unit: "palack",
       heading: "Nem minden döntés kérdése.",
       p1: "Van, amikor az számít, hogy valaki éppen ott van. Abban a városban. Abban az időben.",
-      p2: "Minden kiadás egy szűk kör számára válik elérhetővé. Legfeljebb 1500 palack. Nem ismételhető. Nem pótolható.",
+      p2: "Minden kiadás egy szűk kör számára válik elérhetővé. Legfeljebb 1000 palack. Nem ismételhető. Nem pótolható.",
       accent: "Akik hozzájutnak, nemcsak birtokolják — hanem részesei lesznek egy adott pillanatnak.",
     },
     authenticity: {
@@ -193,7 +193,7 @@ export const translations: Record<Locale, SiteTranslations> = {
     meta: {
       title: "Lumen — Limited Collector's Wine Collection | Numbered Editions",
       description:
-        "Lumen is a limited, numbered collector's wine collection from Hungary. Each release is unique, digitally authenticated. Maximum 1500 bottles per edition.",
+        "Lumen is a limited, numbered collector's wine collection from Hungary. Each release is unique, digitally authenticated. Maximum 1000 bottles per edition.",
       ogTitle: "Lumen — The True Meaning of Rarity",
       ogDescription:
         "A limited, numbered collector's wine collection — for those who understand the true meaning of rarity.",
@@ -233,11 +233,11 @@ export const translations: Record<Locale, SiteTranslations> = {
     },
     exclusivity: {
       label: "Limited access",
-      number: "1500",
+      number: "1000",
       unit: "bottles",
       heading: "Not every decision is about choice.",
       p1: "Sometimes what matters is being there. In that city. At that time.",
-      p2: "Each release becomes available to a select few. A maximum of 1500 bottles. Unrepeatable. Irreplaceable.",
+      p2: "Each release becomes available to a select few. A maximum of 1000 bottles. Unrepeatable. Irreplaceable.",
       accent:
         "Those who obtain it do not simply own it — they become part of a singular moment.",
     },
@@ -286,7 +286,7 @@ export const translations: Record<Locale, SiteTranslations> = {
     meta: {
       title: "Lumen — 限量收藏级葡萄酒 | 编号版",
       description:
-        "Lumen是来自匈牙利的限量、编号收藏级葡萄酒。每版独特，数字认证。每版最多1500瓶。",
+        "Lumen是来自匈牙利的限量、编号收藏级葡萄酒。每版独特，数字认证。每版最多1000瓶。",
       ogTitle: "Lumen — 稀有的真正含义",
       ogDescription: "限量编号收藏级葡萄酒——献给懂得稀有真正含义的人。",
     },
@@ -325,11 +325,11 @@ export const translations: Record<Locale, SiteTranslations> = {
     },
     exclusivity: {
       label: "限量发售",
-      number: "1500",
+      number: "1000",
       unit: "瓶",
       heading: "并非所有决定都关乎选择。",
       p1: "有时重要的是，恰好在那个城市、那个时刻。",
-      p2: "每一期仅向少数人开放。最多1500瓶。不可复制。不可替代。",
+      p2: "每一期仅向少数人开放。最多1000瓶。不可复制。不可替代。",
       accent: "获得者不仅拥有它——更成为某个特定时刻的一部分。",
     },
     authenticity: {
@@ -377,7 +377,7 @@ export const translations: Record<Locale, SiteTranslations> = {
     meta: {
       title: "Lumen — ไวน์สะสมลิมิเต็ด เอดิชั่น | มีหมายเลขกำกับ",
       description:
-        "Lumen คือคอลเลกชันไวน์สะสมจำนวนจำกัดจากฮังการี แต่ละรุ่นไม่ซ้ำกัน ผ่านการรับรองดิจิทัล สูงสุด 1500 ขวดต่อรุ่น",
+        "Lumen คือคอลเลกชันไวน์สะสมจำนวนจำกัดจากฮังการี แต่ละรุ่นไม่ซ้ำกัน ผ่านการรับรองดิจิทัล สูงสุด 1000 ขวดต่อรุ่น",
       ogTitle: "Lumen — ความหมายที่แท้จริงของความหายาก",
       ogDescription:
         "คอลเลกชันไวน์สะสมจำนวนจำกัดมีหมายเลข — สำหรับผู้ที่เข้าใจความหมายแท้จริงของความหายาก",
@@ -417,11 +417,11 @@ export const translations: Record<Locale, SiteTranslations> = {
     },
     exclusivity: {
       label: "จำนวนจำกัด",
-      number: "1500",
+      number: "1000",
       unit: "ขวด",
       heading: "ไม่ใช่ทุกการตัดสินใจเป็นเรื่องของทางเลือก",
       p1: "บางครั้งสิ่งสำคัญคือการอยู่ที่นั่น ในเมืองนั้น ในเวลานั้น",
-      p2: "แต่ละรุ่นเปิดให้เฉพาะกลุ่มคนจำนวนน้อย สูงสุด 1500 ขวด ไม่ผลิตซ้ำ ไม่ทดแทนได้",
+      p2: "แต่ละรุ่นเปิดให้เฉพาะกลุ่มคนจำนวนน้อย สูงสุด 1000 ขวด ไม่ผลิตซ้ำ ไม่ทดแทนได้",
       accent:
         "ผู้ที่ได้รับไม่เพียงครอบครอง — แต่กลายเป็นส่วนหนึ่งของช่วงเวลาพิเศษ",
     },

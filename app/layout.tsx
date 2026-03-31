@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: "%s | Lumen Collection",
   },
   description:
-    "A Lumen egy limitált, sorszámozott gyűjtői borkollekció Magyarországról. Minden kiadás egyedi, digitálisan hitelesített. Maximum 1500 palack kiadásonként.",
+    "A Lumen egy limitált, sorszámozott gyűjtői borkollekció Magyarországról. Minden kiadás egyedi, digitálisan hitelesített. Maximum 1000 palack kiadásonként.",
   keywords: [
     "Lumen",
     "Lumen wine",
@@ -136,7 +136,7 @@ const jsonLd = {
     {
       "@type": "PropertyValue",
       name: "Edition Size",
-      value: "1500 bottles per release",
+      value: "1000 bottles per release",
     },
     {
       "@type": "PropertyValue",

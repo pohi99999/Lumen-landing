@@ -153,8 +153,8 @@ body::after {
 
   /* Hero description: clearly readable on mobile */
   .lumen-hero-lead {
-    font-size: 1.1rem;
-    line-height: 1.62;
+    font-size: 1.15rem;
+    line-height: 1.65;
   }
 }
 

@@ -24,6 +24,7 @@ function PageContent() {
   const { t } = useLanguage();
   const [heroHeadingLead, ...heroHeadingTailParts] = t.hero.heading.split(" — ");
   const heroHeadingTail = heroHeadingTailParts.join(" — ");
+  const logoSizeClass = "h-24 w-24 sm:h-28 sm:w-28 md:h-32 md:w-32";
 
   return (
     <main
@@ -39,11 +40,11 @@ function PageContent() {
 
         <div className="relative z-10 w-full px-4 sm:px-6 md:px-16 lg:px-24">
           <div className="mx-auto grid max-w-7xl items-center gap-8 lg:grid-cols-[minmax(0,0.82fr)_minmax(0,1.18fr)] lg:gap-16">
-            <FadeIn direction="up">
+            <FadeIn direction="up" className="order-2 lg:order-1">
               <p className="mb-6 font-serif text-[11px] font-light italic uppercase tracking-[0.3em] text-[#C6A15B]/75 md:mb-8 md:text-sm">
                 Lumen &mdash; {t.exclusivity.label}
               </p>
-              <h1 className="mb-6 max-w-[94%] font-serif text-[clamp(1.58rem,1.36rem+0.53vw,1.80rem)] font-light italic leading-[1.14] text-[#EAEAEA] text-glow-gold sm:mb-7 sm:max-w-[24ch] md:mb-10 md:max-w-[23ch] md:leading-[1.11] lg:max-w-[21ch] lg:leading-[1.10]">
+              <h1 className="mb-6 max-w-[94%] font-serif text-[1.85rem] md:text-[clamp(1.58rem,1.36rem+0.53vw,1.80rem)] font-light italic leading-[1.14] text-[#EAEAEA] text-glow-gold sm:mb-7 sm:max-w-[24ch] md:mb-10 md:max-w-[23ch] md:leading-[1.11] lg:max-w-[21ch] lg:leading-[1.10]">
                 <span className="block md:inline">{heroHeadingLead}</span>
                 {heroHeadingTail ? (
                   <>
@@ -66,7 +67,7 @@ function PageContent() {
               </a>
             </FadeIn>
 
-            <FadeIn direction="left" className="relative mt-2 w-full lg:justify-self-stretch">
+            <FadeIn direction="left" className="relative mt-2 order-1 w-full lg:order-2 lg:justify-self-stretch">
               <div className="absolute -left-6 top-10 h-28 w-28 rounded-full border border-[#C6A15B]/16" />
               <div className="absolute -bottom-8 right-10 h-36 w-36 rounded-full border border-[#C6A15B]/12" />
             <ImageFrame
@@ -103,7 +104,7 @@ function PageContent() {
 
           <FadeIn direction="up" delay={0.15}>
             <div className="mt-14 flex justify-center sm:mt-16">
-              <DecorativeCube className="h-40 w-40 sm:h-44 sm:w-44 md:h-52 md:w-52" />
+            <DecorativeCube className={logoSizeClass} />
             </div>
           </FadeIn>
         </div>
@@ -210,12 +211,14 @@ function PageContent() {
           <FadeIn direction="up" className="grid grid-cols-2 gap-6">
             <ImageFrame
               src="/3.jpg"
+              mobileSrc="/images/ezt-lennenni2-mobile.jpg"
               alt={t.alt.heritageImage}
               frameClassName="aspect-[3/4]"
               sizes="50vw"
             />
             <ImageFrame
               src="/9.jpg"
+              mobileSrc="/images/ezt-lennenni-mobile.jpg"
               alt={t.alt.detail1}
               frameClassName="aspect-[3/4]"
               sizes="50vw"
@@ -225,6 +228,7 @@ function PageContent() {
           <FadeIn direction="up" delay={0.1} className="grid grid-cols-2 gap-6">
             <ImageFrame
               src="/szerzetes-uj.jpg"
+              mobileSrc="/images/levett-helyett-1-mobile.jpg"
               alt="Szerzetes borral, pohárral"
               frameClassName="aspect-[3/4]"
               sizes="50vw"
@@ -232,6 +236,7 @@ function PageContent() {
             />
             <ImageFrame
               src="/szolofurt-uj.jpg"
+              mobileSrc="/images/levett-helyett-2-mobile.jpg"
               alt="Szőlőfürt közelkép"
               frameClassName="aspect-[3/4]"
               sizes="50vw"
@@ -307,7 +312,7 @@ function PageContent() {
           </div>
 
           <div className="order-3 flex justify-center md:order-2">
-            <DecorativeCube className="h-24 w-24 sm:h-28 sm:w-28 md:h-32 md:w-32" />
+            <DecorativeCube className={logoSizeClass} />
           </div>
 
           <div className="order-2 flex flex-wrap justify-center gap-8 uppercase text-xs md:order-3 md:justify-end">
@@ -329,6 +334,7 @@ function PageContent() {
 
 type ImageFrameProps = {
   src: string;
+  mobileSrc?: string;
   alt: string;
   frameClassName: string;
   sizes: string;
@@ -342,6 +348,7 @@ type ImageFrameProps = {
 
 function ImageFrame({
   src,
+  mobileSrc,
   alt,
   frameClassName,
   sizes,
@@ -371,6 +378,28 @@ function ImageFrame({
             />
           </div>
         </div>
+      ) : mobileSrc ? (
+        <>
+          <Image
+            src={mobileSrc}
+            alt={alt}
+            fill
+            loading="lazy"
+            sizes={sizes}
+            className={`object-cover md:hidden ${imageClassName}`}
+            style={{ objectPosition: position }}
+          />
+          <Image
+            src={src}
+            alt={alt}
+            fill
+            priority={priority}
+            loading={priority ? "eager" : "lazy"}
+            sizes={sizes}
+            className={`object-cover hidden md:block ${imageClassName}`}
+            style={{ objectPosition: position }}
+          />
+        </>
       ) : (
         <Image
           src={src}
