@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import type { ReactNode } from "react";
@@ -236,7 +236,7 @@ function PageContent() {
           <FadeIn direction="up" delay={0.1} className="grid grid-cols-2 gap-6">
             <ImageFrame
               src="/szerzetes-uj.jpg"
-              mobileSrc="/szerzetes-uj.jpg"
+              mobileSrc="/szolofurt-uj.jpg"
               alt="Szerzetes borral, pohárral"
               frameClassName="aspect-[3/4]"
               sizes="50vw"
