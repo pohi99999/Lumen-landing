@@ -114,7 +114,7 @@ function PageContent() {
         <div className="container mx-auto grid items-center gap-16 lg:grid-cols-2 lg:gap-24">
           <FadeIn
             direction="right"
-            className="order-2 relative mx-auto w-full max-w-md lg:order-1 lg:max-w-none"
+            className="order-2 hidden md:block relative mx-auto w-full max-w-md lg:order-1 lg:max-w-none"
           >
             <ImageFrame
               src="/2.jpg"
@@ -162,7 +162,7 @@ function PageContent() {
 
           <FadeIn
             direction="left"
-            className="relative mx-auto w-full max-w-md lg:max-w-none"
+            className="hidden md:block relative mx-auto w-full max-w-md lg:max-w-none"
           >
             <ImageFrame
               src="/3.jpg"
