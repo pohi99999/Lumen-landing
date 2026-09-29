@@ -308,6 +308,15 @@ function PageContent() {
           <p className="font-serif lumen-accent-copy italic text-[#C6A15B]">
             {t.closing.sub}
           </p>
+          <div className="relative mx-auto mt-12 aspect-[3/4] w-64 overflow-hidden rounded-2xl border border-[#C6A15B]/25 shadow-[0_24px_60px_rgba(0,0,0,0.5)] md:w-80">
+            <Image
+              src="/lumen-new-6.jpg"
+              alt={t.alt.limitedEditionImage}
+              fill
+              sizes="(max-width: 768px) 256px, 320px"
+              className="object-cover"
+            />
+          </div>
         </FadeIn>
 
         <div className="mx-auto grid max-w-7xl items-center gap-8 border-t border-[#EAEAEA]/10 pt-12 text-sm tracking-widest text-[#EAEAEA]/40 md:grid-cols-[1fr_auto_1fr]">
@@ -321,15 +330,7 @@ function PageContent() {
           </div>
 
           <div className="order-3 flex justify-center md:order-2">
-            <div className="relative h-36 w-28 overflow-hidden rounded-2xl border border-[#C6A15B]/25 shadow-[0_18px_40px_rgba(0,0,0,0.45)] sm:h-40 sm:w-32">
-              <Image
-                src="/lumen-new-6.jpg"
-                alt={t.alt.limitedEditionImage}
-                fill
-                sizes="(max-width: 640px) 112px, 128px"
-                className="object-cover"
-              />
-            </div>
+            <DecorativeCube className={logoSizeClass} />
           </div>
 
           <div className="order-2 flex flex-wrap justify-center gap-8 uppercase text-xs md:order-3 md:justify-end">
