@@ -93,6 +93,7 @@ export interface SiteTranslations {
     detail3: string;
     authImage: string;
     nextReleaseImage: string;
+    limitedEditionImage: string;
   };
 }
 
@@ -186,6 +187,7 @@ export const translations: Record<Locale, SiteTranslations> = {
       detail3: "Szerzetes borral, pohárral és szőlőfürttel",
       authImage: "QR-kódos hitelesítés",
       nextReleaseImage: "A következő Lumen kiadás előzetese",
+      limitedEditionImage: "Lumen limitált kiadás, két díszdoboz",
     },
   },
 
@@ -279,6 +281,7 @@ export const translations: Record<Locale, SiteTranslations> = {
       detail3: "Lumen release — exclusive detail",
       authImage: "Digital authentication and QR code verification",
       nextReleaseImage: "Preview of the next Lumen release",
+      limitedEditionImage: "Lumen limited edition, two collector boxes",
     },
   },
 
@@ -370,6 +373,7 @@ export const translations: Record<Locale, SiteTranslations> = {
       detail3: "Lumen发行——独家细节",
       authImage: "数字认证与二维码验证",
       nextReleaseImage: "下一期Lumen预告",
+      limitedEditionImage: "Lumen限量版，两个收藏礼盒",
     },
   },
 
@@ -463,6 +467,7 @@ export const translations: Record<Locale, SiteTranslations> = {
       detail3: "การเปิดตัว Lumen — รายละเอียดพิเศษ",
       authImage: "การรับรองดิจิทัลและการตรวจสอบ QR Code",
       nextReleaseImage: "ตัวอย่างการเปิดตัว Lumen ครั้งถัดไป",
+      limitedEditionImage: "Lumen รุ่นจำกัด กล่องสะสมสองกล่อง",
     },
   },
 };

@@ -71,7 +71,7 @@ function PageContent() {
               <div className="absolute -left-6 top-10 h-28 w-28 rounded-full border border-[#C6A15B]/16" />
               <div className="absolute -bottom-8 right-10 h-36 w-36 rounded-full border border-[#C6A15B]/12" />
             <ImageFrame
-              src="/7.jpg"
+              src="/lumen-new-1.jpg"
               alt={t.alt.heroImage}
               frameClassName="h-[340px] sm:h-[380px] md:h-[440px] lg:h-[72vh] lg:min-h-[640px]"
               sizes="(max-width: 1024px) 92vw, 52vw"
@@ -117,7 +117,7 @@ function PageContent() {
             className="order-2 hidden md:block relative mx-auto w-full max-w-md lg:order-1 lg:max-w-none"
           >
             <ImageFrame
-              src="/2.jpg"
+              src="/lumen-new-3.jpg"
               alt={t.alt.conceptImage}
               frameClassName="aspect-[3/4] lg:aspect-[4/5]"
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -181,18 +181,18 @@ function PageContent() {
             className="order-2 relative mx-auto w-full lg:order-1 lg:max-w-none"
           >
             <Image
-              src="/lumen-qr-new.jpg"
+              src="/lumen-new-4.jpg"
               alt={t.alt.authImage}
-              width={1536}
-              height={1024}
+              width={1440}
+              height={1092}
               sizes="(max-width: 1024px) 92vw, 48vw"
               className="w-full h-auto rounded-2xl shadow-[0_32px_90px_rgba(0,0,0,0.55)] hidden md:block"
             />
             <Image
-              src="/lumen-qr-new.jpg"
+              src="/lumen-new-4.jpg"
               alt={t.alt.authImage}
-              width={900}
-              height={1200}
+              width={1440}
+              height={1092}
               sizes="92vw"
               className="w-full h-auto rounded-2xl shadow-[0_32px_90px_rgba(0,0,0,0.55)] md:hidden"
             />
@@ -225,8 +225,9 @@ function PageContent() {
               sizes="50vw"
             />
             <ImageFrame
-              src="/9.jpg"
-              mobileSrc="/6.jpg"
+              src="/lumen-new-2.jpg"
+              mobileSrc="/lumen-new-2.jpg"
+              position="25% center"
               alt={t.alt.detail1}
               frameClassName="aspect-[3/4]"
               sizes="50vw"
@@ -275,10 +276,10 @@ function PageContent() {
         <div className="container mx-auto grid items-center gap-12 relative z-10 lg:grid-cols-2">
           <FadeIn direction="right" className="relative aspect-video w-full overflow-hidden group lg:aspect-[16/10]">
             <Image
-              src="/8.jpg"
+              src="/lumen-new-5.jpg"
               alt={t.alt.nextReleaseImage}
               fill
-              className="object-cover object-left opacity-85 transition-all duration-700 group-hover:opacity-100"
+              className="object-cover object-center opacity-85 transition-all duration-700 group-hover:opacity-100"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-[#0B0B0B]/18 via-transparent to-[#0B0B0B]/26" />
@@ -320,7 +321,15 @@ function PageContent() {
           </div>
 
           <div className="order-3 flex justify-center md:order-2">
-            <DecorativeCube className={logoSizeClass} />
+            <div className="relative h-36 w-28 overflow-hidden rounded-2xl border border-[#C6A15B]/25 shadow-[0_18px_40px_rgba(0,0,0,0.45)] sm:h-40 sm:w-32">
+              <Image
+                src="/lumen-new-6.jpg"
+                alt={t.alt.limitedEditionImage}
+                fill
+                sizes="(max-width: 640px) 112px, 128px"
+                className="object-cover"
+              />
+            </div>
           </div>
 
           <div className="order-2 flex flex-wrap justify-center gap-8 uppercase text-xs md:order-3 md:justify-end">
