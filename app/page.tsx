@@ -227,7 +227,7 @@ function PageContent() {
             <ImageFrame
               src="/lumen-new-2.jpg"
               mobileSrc="/lumen-new-2.jpg"
-              position="25% center"
+              position="77% center"
               alt={t.alt.detail1}
               frameClassName="aspect-[3/4]"
               sizes="50vw"
