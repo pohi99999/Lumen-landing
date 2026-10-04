@@ -18,9 +18,11 @@ export function BackToTop() {
     <button
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       aria-label="Back to top"
-      className="fixed bottom-8 right-8 z-50 p-3 bg-[#3A0F14]/80 backdrop-blur-md border border-[#C6A15B]/30 rounded-full text-[#C6A15B] hover:bg-[#C6A15B] hover:text-[#0B0B0B] transition-all duration-300 shadow-lg shadow-black/30 hover:scale-110"
+      // Below md: a 24 px tab in the right gutter (the sections keep 24 px side padding), so it never
+      // covers text while scrolling. From md up: the round button as before.
+      className="fixed bottom-8 right-0 z-50 flex h-11 w-6 items-center justify-center rounded-l-lg border border-r-0 border-[#C6A15B]/30 bg-[#3A0F14]/80 text-[#C6A15B] shadow-lg shadow-black/30 backdrop-blur-md transition-all duration-300 hover:bg-[#C6A15B] hover:text-[#0B0B0B] md:right-8 md:h-auto md:w-auto md:rounded-full md:border-r md:p-3 md:hover:scale-110"
     >
-      <ArrowUp className="w-5 h-5" />
+      <ArrowUp className="h-4 w-4 md:h-5 md:w-5" />
     </button>
   );
 }

@@ -114,12 +114,12 @@ function PageContent() {
         <div className="container mx-auto grid items-center gap-16 lg:grid-cols-2 lg:gap-24">
           <FadeIn
             direction="right"
-            className="order-2 hidden md:block relative mx-auto w-full max-w-md lg:order-1 lg:max-w-none"
+            className="order-2 relative mx-auto w-full max-w-md lg:order-1 lg:max-w-none"
           >
             <ImageFrame
               src="/lumen-new-3.jpg"
               alt={t.alt.conceptImage}
-              frameClassName="aspect-[3/4] lg:aspect-[4/5]"
+              frameClassName="aspect-[4/3] md:aspect-[3/4] lg:aspect-[4/5]"
               sizes="(max-width: 1024px) 100vw, 50vw"
               overlay={
                 <div className="absolute inset-0 shadow-[inset_0_0_100px_#0B0B0B]" />
@@ -162,12 +162,12 @@ function PageContent() {
 
           <FadeIn
             direction="left"
-            className="hidden md:block relative mx-auto w-full max-w-md lg:max-w-none"
+            className="relative mx-auto w-full max-w-md lg:max-w-none"
           >
             <ImageFrame
               src="/3.jpg"
               alt={t.alt.heritageImage}
-              frameClassName="aspect-[4/3] lg:aspect-square"
+              frameClassName="aspect-[16/10] md:aspect-[4/3] lg:aspect-square"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </FadeIn>
@@ -219,14 +219,12 @@ function PageContent() {
           <FadeIn direction="up" className="grid grid-cols-2 gap-6">
             <ImageFrame
               src="/3.jpg"
-              mobileSrc="/szerzetes-uj.jpg"
               alt={t.alt.heritageImage}
               frameClassName="aspect-[3/4]"
               sizes="50vw"
             />
             <ImageFrame
               src="/lumen-new-2.jpg"
-              mobileSrc="/lumen-new-2.jpg"
               position="77% center"
               alt={t.alt.detail1}
               frameClassName="aspect-[3/4]"
@@ -237,7 +235,6 @@ function PageContent() {
           <FadeIn direction="up" delay={0.1} className="grid grid-cols-2 gap-6">
             <ImageFrame
               src="/szerzetes-uj.jpg"
-              mobileSrc="/szolofurt-uj.jpg"
               alt="Szerzetes borral, pohárral"
               frameClassName="aspect-[3/4]"
               sizes="50vw"
@@ -245,7 +242,6 @@ function PageContent() {
             />
             <ImageFrame
               src="/szolofurt-uj.jpg"
-              mobileSrc="/szerzetes-helyett.avif"
               alt="Szőlőfürt közelkép"
               frameClassName="aspect-[3/4]"
               sizes="50vw"
