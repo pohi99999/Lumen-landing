@@ -32,9 +32,9 @@ export function LanguageSwitcher ()
     }, [] );
 
     return (
-        // Below md the switcher sits at the top of the page and scrolls away with it; fixed, it covered
-        // headings while scrolling on phones. From md up it stays fixed in the corner.
-        <div ref={ ref } className="absolute top-4 right-4 z-50 md:fixed md:top-6 md:right-6">
+        // The switcher sits at the top of the page and scrolls away with it, on every width: fixed in
+        // the corner it covered text while scrolling (phones, and 1280/1440 px desktops).
+        <div ref={ ref } className="absolute top-4 right-4 z-50 md:top-6 md:right-6">
             <button
                 onClick={ () => setIsOpen( !isOpen ) }
                 className="flex items-center gap-2 px-4 py-2.5 bg-black/60 backdrop-blur-md border border-[#C6A15B]/30 rounded-full text-sm text-[#EAEAEA] hover:border-[#C6A15B]/70 hover:bg-black/80 transition-all duration-300 shadow-lg shadow-black/20"
