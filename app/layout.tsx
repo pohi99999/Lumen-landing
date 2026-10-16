@@ -213,8 +213,6 @@ export default function RootLayout ( {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify( breadcrumbLd ) }}
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <meta name="theme-color" content="#0B0B0B" />
         <meta name="msapplication-TileColor" content="#3A0F14" />
         <meta name="format-detection" content="telephone=no" />
