@@ -42,3 +42,11 @@ next-env.d.ts
 
 # Projekt dokumentáció
 workflow.md
+
+# local build, audit and test output (never commit: holds workstation paths)
+build-*.txt
+audit-*.txt
+test-output.txt
+/test-results/
+/playwright-report/
+/audit-screenshots/
