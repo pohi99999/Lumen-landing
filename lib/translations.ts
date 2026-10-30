@@ -19,7 +19,6 @@ export interface SiteTranslations {
     subheading: string;
     quote: string;
     cta: string;
-    scroll: string;
   };
   intro: {
     line1: string;
@@ -38,7 +37,7 @@ export interface SiteTranslations {
     p1: string;
     p2: string;
     p3: string;
-    quote: string;
+    p4: string;
   };
   experience: {
     heading: string;
@@ -113,7 +112,6 @@ export const translations: Record<Locale, SiteTranslations> = {
         "A Lumen egy limitált, sorszámozott gyűjtői borkollekció — azok számára, akik értik a ritkaság valódi jelentését.",
       quote: "A ritkaságnak nem kell elérhetetlennek lennie.",
       cta: "Elérhetőség megtekintése",
-      scroll: "Görgessen",
     },
     intro: {
       line1: "Vannak dolgok, amelyek nem sietnek.\nIdő kell hozzájuk. Figyelem. Csend.",
@@ -128,11 +126,11 @@ export const translations: Record<Locale, SiteTranslations> = {
       closing: "Egyszer jelen volt. És aki ott volt emlékezni fog rá.",
     },
     heritage: {
-      heading: "A Lumen gyökerei\nmélyre nyúlnak.",
-      p1: "Magyarország borászata évszázadok óta formálódik – a föld, a klíma és a generációkon át öröklődő tudás finom egyensúlyából.",
-      p2: "Ez a tudás nem látványos, nem hangos – rétegről rétegre épül.",
-      p3: "A Lumen ezt az örökséget emeli ki, és ad neki egy kortárs, letisztult formát.\nEgy gondosan válogatott Pinot Gris, amely rövid ideig tölgyfahordóban érlelődik, hogy finom mélységet és eleganciát nyerjen, miközben megőrzi természetes frissességét.",
-      quote: "Egy palack, amely nemcsak megőriz, hanem tovább is mesél.",
+      heading: "Ahol a hagyomány karakterré érik",
+      p1: "A Lumen túlérett szőlőből készült, édes, oltalom alatt álló eredetmegjelölésű fehérbor Badacsony időtlen értékeinek kifejezője, a történelmi Szürkebarát szőlőfajta egyik legnemesebb megjelenése.",
+      p2: "A hagyományos, természetes művelési módnak köszönhetően a szőlőszemek a teljes érésig a tőkén maradnak, karakterük elmélyül, miközben a növény már nem vonja vissza belőlük a tápanyagokat.",
+      p3: "Az eredmény egy sajátos intenzitású, karakteres bor, aranyló színnel, a rózsa, a kajszibarack és a szőlővirág finom jegyeivel.",
+      p4: "Friss és könnyed, ízében az érett kajszibarack szelíd emlékét idézi.",
     },
     experience: {
       heading: "A Lumen nem csupán\negy tárgy.",
@@ -206,7 +204,6 @@ export const translations: Record<Locale, SiteTranslations> = {
         "Lumen is a limited, numbered collector's wine collection — for those who understand the true meaning of rarity.",
       quote: "Rarity does not have to mean inaccessibility.",
       cta: "View availability",
-      scroll: "Scroll",
     },
     intro: {
       line1: "Some things are not meant to be rushed.\nThey require time. Attention. Silence.",
@@ -221,11 +218,11 @@ export const translations: Record<Locale, SiteTranslations> = {
       closing: "It existed once. And those who were there remember.",
     },
     heritage: {
-      heading: "The roots of Lumen\nrun deep.",
-      p1: "Hungarian winemaking has been shaped for centuries — by the delicate balance of the land, the climate, and knowledge passed down through generations.",
-      p2: "That knowledge is not visual or loud — it builds layer by layer.",
-      p3: "Lumen lifts this heritage into a contemporary, clean form.\nA carefully selected Pinot Gris, briefly matured in oak, gains subtle depth and elegance while keeping its natural freshness.",
-      quote: "A bottle that not only preserves, but continues to tell its story.",
+      heading: "Where tradition matures into character",
+      p1: "Lumen, a sweet white wine with a protected designation of origin made from overripe grapes, expresses the timeless values of Badacsony and is one of the noblest manifestations of the historic Szürkebarát (Pinot Gris) variety.",
+      p2: "Thanks to traditional, natural cultivation, the grapes stay on the vine until they are fully ripe. Their character deepens, while the vine no longer draws nutrients back from them.",
+      p3: "The result is a wine of distinctive intensity and character, golden in colour, with delicate notes of rose, apricot and vine blossom.",
+      p4: "Fresh and light, its palate carries the gentle memory of ripe apricot.",
     },
     experience: {
       heading: "Lumen is more\nthan an object.",
@@ -299,7 +296,6 @@ export const translations: Record<Locale, SiteTranslations> = {
         "Lumen 是一组限量、编号的收藏级葡萄酒——献给懂得稀有真正含义的人。",
       quote: "稀有，不必意味着遥不可及。",
       cta: "查看可购渠道",
-      scroll: "向下滚动",
     },
     intro: {
       line1: "有些事物，不应被催促。\n它们需要时间、专注与宁静。",
@@ -314,11 +310,11 @@ export const translations: Record<Locale, SiteTranslations> = {
       closing: "它只存在过一次。而见证者，终将铭记。",
     },
     heritage: {
-      heading: "Lumen 的根源，\n深植于历史。",
-      p1: "匈牙利葡萄酒业数百年来不断形成——源自土地、气候与代代相传的知识之间的微妙平衡。",
-      p2: "这种知识并不张扬，也不喧哗——而是层层累积而成。",
-      p3: "Lumen 将这份传承提炼为一种当代而克制的表达。\n一款精心挑选的 Pinot Gris，在橡木桶中短暂陈酿，获得细腻的深度与优雅，同时保留其天然的新鲜感。",
-      quote: "一瓶酒，不只是保存，也会继续讲述。",
+      heading: "传统在此成熟为品格",
+      p1: "Lumen 是一款以过熟葡萄酿制的甜型白葡萄酒，受原产地名称保护，诠释了巴达乔尼永恒的价值，也是历史悠久的灰皮诺（Szürkebarát）葡萄品种最高贵的呈现之一。",
+      p2: "得益于传统而自然的栽培方式，葡萄果粒一直留在藤上，直至完全成熟；其品格随之加深，而此时植株已不再从果粒中回收养\u2060分。",
+      p3: "最终成就一款强度独特、个性鲜明的葡萄酒：色泽金黄，带有玫瑰、杏与葡萄花的细腻气息。",
+      p4: "清新而轻盈，口中留有熟杏温柔的回\u2060忆。",
     },
     experience: {
       heading: "Lumen，\n不仅是一件物品。",
@@ -392,7 +388,6 @@ export const translations: Record<Locale, SiteTranslations> = {
         "Lumen คือคอลเลกชันไวน์สะสมจำนวนจำกัด มีหมายเลขกำกับ — สำหรับผู้ที่เข้าใจความหมายแท้จริงของความหายาก",
       quote: "ความหายาก ไม่จำเป็นต้องหมายถึงสิ่งที่เข้าถึงไม่ได้",
       cta: "ดูช่องทางจำหน่าย",
-      scroll: "เลื่อนลง",
     },
     intro: {
       line1: "บางสิ่ง ไม่ควรถูกเร่งรีบ\nต้องใช้เวลา ความใส่ใจ และความสงบ",
@@ -407,11 +402,11 @@ export const translations: Record<Locale, SiteTranslations> = {
       closing: "มันเคยมีอยู่ครั้งหนึ่ง และผู้ที่ได้สัมผัส จะไม่มีวันลืม",
     },
     heritage: {
-      heading: "รากเหง้าของ Lumen\nฝังลึกในประวัติศาสตร์",
-      p1: "การทำไวน์ของฮังการีก่อร่างขึ้นมาหลายศตวรรษ — จากสมดุลอันละเอียดอ่อนระหว่างผืนดิน สภาพอากาศ และความรู้ที่สืบทอดกันมาจากรุ่นสู่รุ่น",
-      p2: "ความรู้นี้ไม่ฉูดฉาด ไม่ส่งเสียงดัง — แต่มันก่อตัวขึ้นทีละชั้น",
-      p3: "Lumen นำมรดกนี้มาถ่ายทอดในรูปแบบร่วมสมัยที่เรียบคม\nไวน์ Pinot Gris ที่คัดสรรมาอย่างพิถีพิถัน บ่มในถังไม้โอ๊กช่วงเวลาสั้น ๆ เพื่อให้ได้มิติและความสง่างามที่ละเมียดละไม ขณะยังคงความสดตามธรรมชาติไว้",
-      quote: "หนึ่งขวดที่ไม่เพียงเก็บรักษา แต่ยังเล่าเรื่องต่อไป",
+      heading: "ที่ซึ่งประเพณีบ่มเพาะจน\u2060กลายเป็นเอกลักษณ์",
+      p1: "Lumen คือไวน์ขาวรสหวานที่ได้รับการคุ้มครองชื่อแหล่ง\u2060กำเนิด ผลิตจากองุ่นที่สุกงอมเต็มที่ เป็นการถ่ายทอดคุณค่าอันเหนือกาล\u2060เวลาของบาดัชโชน (Badacsony) และเป็นหนึ่งในการแสดงออกที่สูงส่งที่สุดขององุ่นพันธุ์ Szürkebarát (Pinot Gris) อันเก่าแก่",
+      p2: "ด้วยวิธีการเพาะปลูกแบบดั้งเดิมและเป็นธรรมชาติ ผล\u2060องุ่นจะอยู่บนต้นจนสุกเต็มที่ เอกลักษณ์ของผลจึงลึกซึ้งยิ่ง\u2060ขึ้น ขณะที่ต้น\u2060องุ่นไม่ดึงสาร\u2060อาหารกลับคืนจากผลอีกต่อ\u2060ไป",
+      p3: "ผลลัพธ์คือไวน์ที่มีความเข้ม\u2060ข้นเฉพาะตัวและเอกลักษณ์ชัดเจน สี\u2060เหลือง\u2060ทองอร่าม พร้อมกลิ่น\u2060อายอันละเอียด\u2060อ่อนของกุหลาบ แอปริคอต และดอก\u2060องุ่น",
+      p4: "สดชื่นและเบาสบาย รสชาติชวนให้นึกถึงแอปริคอตสุกอย่างอ่อนโยน",
     },
     experience: {
       heading: "Lumen\nไม่ใช่แค่สิ่งของ",

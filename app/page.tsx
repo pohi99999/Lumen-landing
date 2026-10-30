@@ -7,7 +7,7 @@ import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { BackToTop } from "@/components/BackToTop";
 import { CookieConsent } from "@/components/CookieConsent";
 import { useLanguage } from "@/lib/LanguageContext";
-import { ArrowDown, ScanLine, Wine } from "lucide-react";
+import { ScanLine, Wine } from "lucide-react";
 
 export default function Home() {
   return (
@@ -82,13 +82,6 @@ function PageContent() {
             </FadeIn>
           </div>
         </div>
-
-        <div className="absolute bottom-10 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center opacity-50 md:flex">
-          <span className="mb-4 font-sans text-[10px] uppercase tracking-[0.3em]">
-            {t.hero.scroll}
-          </span>
-          <ArrowDown className="h-4 w-4 animate-bounce" />
-        </div>
       </section>
 
       <section className="px-6 py-28 sm:py-32 md:py-44">
@@ -154,9 +147,7 @@ function PageContent() {
               <p>{t.heritage.p1}</p>
               <p>{t.heritage.p2}</p>
               <p>{t.heritage.p3}</p>
-              <p className="font-serif lumen-accent-copy-lg pt-4 italic text-[#C6A15B]">
-                &ldquo;{t.heritage.quote}&rdquo;
-              </p>
+              <p>{t.heritage.p4}</p>
             </div>
           </FadeIn>
 
