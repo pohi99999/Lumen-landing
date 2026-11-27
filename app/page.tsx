@@ -59,8 +59,10 @@ function PageContent() {
               <p className="mb-7 max-w-lg font-serif text-[1.10rem] italic leading-[1.58] text-[#C6A15B] sm:text-[1.19rem] md:mb-14 md:text-[1.28rem] md:leading-[1.68]">
                 &ldquo;{t.hero.quote}&rdquo;
               </p>
+              {/* The release's own "limited access" section: the only availability information the site has.
+                  The partner list this once pointed to (#partnerek) was removed on the client's request (d1eb045). */}
               <a
-                href="#"
+                href="#availability"
                 className="inline-flex items-center gap-3 border border-[#C6A15B]/40 px-6 py-3 text-xs uppercase tracking-[0.2em] transition-all duration-500 ease-out hover:bg-[#C6A15B] hover:text-[#0B0B0B] backdrop-blur-sm sm:px-8 sm:py-4 sm:text-sm"
               >
                 {t.hero.cta}
@@ -241,7 +243,7 @@ function PageContent() {
         </div>
       </section>
 
-      <section className="py-32 px-6">
+      <section id="availability" className="py-32 px-6">
         <div className="container mx-auto">
           <FadeIn direction="up" className="text-center max-w-3xl mx-auto mb-20 space-y-8">
             <h2 className="font-serif text-4xl font-light italic leading-tight text-glow-gold md:text-5xl">
@@ -278,11 +280,8 @@ function PageContent() {
             <p className="font-serif lumen-body-copy whitespace-pre-line font-light italic tracking-wide text-[#EAEAEA]/72">
               {t.nextRelease.p1}
             </p>
-            <div className="pt-6">
-              <button className="border-b border-[#C6A15B] pb-2 pt-2 min-h-[44px] text-sm uppercase tracking-[0.2em] text-[#C6A15B] transition-colors hover:border-[#EAEAEA] hover:text-[#EAEAEA]">
-                {t.nextRelease.cta}
-              </button>
-            </div>
+            {/* "Notify me" (t.nextRelease.cta) is not shown until there is somewhere to send the sign-up and a
+                privacy notice for it: a button that does nothing is worse than none (card e8248a9b). */}
           </FadeIn>
         </div>
       </section>
@@ -320,17 +319,9 @@ function PageContent() {
             <DecorativeCube className={logoSizeClass} />
           </div>
 
-          <div className="order-2 flex flex-wrap justify-center gap-8 uppercase text-xs md:order-3 md:justify-end">
-            <a href="#" className="inline-flex min-h-[44px] items-center py-3 transition-colors hover:text-[#EAEAEA]">
-              {t.footer.imprint}
-            </a>
-            <a href="#" className="inline-flex min-h-[44px] items-center py-3 transition-colors hover:text-[#EAEAEA]">
-              {t.footer.privacy}
-            </a>
-            <a href="#" className="inline-flex min-h-[44px] items-center py-3 transition-colors hover:text-[#EAEAEA]">
-              {t.footer.contact}
-            </a>
-          </div>
+          {/* Imprint, Privacy and Contact (t.footer.*) come back when their pages and data exist; until then
+              this column only keeps the logo centred on wide screens (card e8248a9b). */}
+          <div aria-hidden="true" className="hidden md:order-3 md:block" />
         </div>
       </footer>
     </main>
